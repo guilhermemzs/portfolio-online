@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help School — Sistema de Gestão (Demonstração)</title>
+  <meta name="description" content="Demonstração estática do sistema de gestão de escala de aulas desenvolvido por Guilherme Menezes Pereira. Todos os dados são fictícios." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+
+  <!-- Faixa fixa deixando claro que é uma demonstração -->
+  <div class="demo-banner">
+    <strong>Demonstração</strong>&nbsp;— interface do sistema real com dados 100% fictícios.
+    <a href="../#projetos">← Voltar ao portfólio</a>
+  </div>
+
+  <!-- ============================================================
+       TELA DE LOGIN (qualquer credencial entra na demo)
+  ============================================================ -->
+  <div class="screen screen--login is-active" id="screenLogin">
+    <div class="login__box">
+      <div class="login__brand">
+        <span class="brand-help">Help</span><span class="brand-school">school</span>
+        <p>Sistema de Gestão</p>
+      </div>
+      <div class="login__card">
+        <h1>Entrar no sistema</h1>
+        <form id="loginForm">
+          <label>E-mail
+            <input type="email" value="demo@exemplo.com" readonly />
+          </label>
+          <label>Senha
+            <input type="password" value="demonstracao" readonly />
+          </label>
+          <button type="submit" class="btn-red">Entrar na demonstração</button>
+        </form>
+        <p class="login__hint">Acesso livre — nenhum dado real é exibido.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       APLICAÇÃO (sidebar + topbar + telas)
+  ============================================================ -->
+  <div class="screen screen--app" id="screenApp">
+
+    <!-- Barra lateral -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__head">
+        <div>
+          <span class="brand-help">Help</span><span class="brand-school">school</span>
+          <p>Sistema de Gestão</p>
+        </div>
+        <button class="sidebar__close" id="sidebarClose" aria-label="Fechar menu">✕</button>
+      </div>
+      <nav class="sidebar__nav">
+        <p class="sidebar__section">Principal</p>
+        <a href="#" class="sidebar__link is-active" data-view="dashboard">▦ Dashboard</a>
+        <a href="#" class="sidebar__link" data-view="escala">🗓 Escala do Inglês</a>
+        <a href="#" class="sidebar__link is-disabled">📅 Aulas Flexíveis</a>
+        <p class="sidebar__section">Cadastros</p>
+        <a href="#" class="sidebar__link is-disabled">📖 Turmas</a>
+        <a href="#" class="sidebar__link is-disabled">⏱ Grade Fixa</a>
+        <a href="#" class="sidebar__link is-disabled">👤 Professores</a>
+        <p class="sidebar__section">Reforço Escolar</p>
+        <a href="#" class="sidebar__link is-disabled">📚 Alunos do Reforço</a>
+        <a href="#" class="sidebar__link is-disabled">🗓 Escala do Reforço</a>
+        <p class="sidebar__section">Saídas</p>
+        <a href="#" class="sidebar__link is-disabled">🖨 Impressão</a>
+        <a href="#" class="sidebar__link is-disabled">📊 Estatísticas</a>
+        <p class="sidebar__section">Sistema</p>
+        <a href="#" class="sidebar__link is-disabled">⚙ Configurações</a>
+      </nav>
+      <p class="sidebar__note">Itens desativados nesta demonstração</p>
+    </aside>
+
+    <div class="app-main">
+      <!-- Barra superior -->
+      <header class="topbar">
+        <button class="topbar__burger" id="sidebarOpen" aria-label="Abrir menu">☰</button>
+        <p class="topbar__date" id="topbarDate"></p>
+        <div class="topbar__user">
+          <span class="topbar__avatar">GU</span>
+          <span class="topbar__user-info"><strong>Usuário Demo</strong><small>Coordenador</small></span>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <!-- ================== DASHBOARD ================== -->
+        <section class="view is-active" id="view-dashboard">
+          <div class="view__head">
+            <div>
+              <h1>Dashboard</h1>
+              <p id="dashGreeting">Olá, Usuário Demo!</p>
+            </div>
+            <button class="btn-red" data-goto="escala">Abrir Escala de Hoje →</button>
+          </div>
+
+          <p class="group-label">Turmas</p>
+          <div class="metrics metrics--4">
+            <div class="metric"><p>Total</p><strong>42</strong></div>
+            <div class="metric"><p>Ativas</p><strong class="t-green">38</strong></div>
+            <div class="metric"><p>Fixas</p><strong>26</strong></div>
+            <div class="metric"><p>Flexíveis</p><strong class="t-purple">12</strong></div>
+          </div>
+
+          <p class="group-label">Aulas de inglês de hoje</p>
+          <div class="metrics metrics--6">
+            <div class="metric"><p>Total</p><strong>8</strong></div>
+            <div class="metric"><p>Online</p><strong>3</strong></div>
+            <div class="metric"><p>Presencial</p><strong class="t-red">5</strong></div>
+            <div class="metric"><p>Confirmadas</p><strong class="t-green">5</strong></div>
+            <div class="metric"><p>Pendentes</p><strong class="t-yellow">2</strong></div>
+            <div class="metric"><p>Canceladas</p><strong class="t-muted">1</strong></div>
+          </div>
+
+          <p class="group-label">Ações rápidas</p>
+          <div class="actions">
+            <button data-goto="escala"><span class="chip chip--blue">🗓</span>Escala do Inglês</button>
+            <button class="is-disabled"><span class="chip chip--purple">⏱</span>Agendar Flexíveis</button>
+            <button class="is-disabled"><span class="chip chip--green">📖</span>Turmas</button>
+            <button class="is-disabled"><span class="chip chip--yellow">⏰</span>Grade Fixa</button>
+            <button class="is-disabled"><span class="chip chip--red">👤</span>Professores</button>
+            <button class="is-disabled"><span class="chip chip--gray">🖨</span>Impressão</button>
+          </div>
+
+          <div class="table-card">
+            <div class="table-card__head">
+              <p>Lista de aulas de hoje</p>
+              <a href="#" data-goto="escala">Ver completo →</a>
+            </div>
+            <div class="table-wrap">
+              <table id="dashTable">
+                <thead>
+                  <tr><th>Horário</th><th>Turma</th><th>Professor</th><th>Modalidade</th><th>Status</th></tr>
+                </thead>
+                <tbody><!-- preenchido via JS com dados fictícios --></tbody>
+              </table>
+            </div>
+          </div>
+
+          <p class="group-label">Professores</p>
+          <div class="metrics metrics--5">
+            <div class="metric"><p>Total</p><strong>9</strong></div>
+            <div class="metric"><p>Ativos</p><strong class="t-green">8</strong></div>
+            <div class="metric"><p>Online</p><strong>6</strong></div>
+            <div class="metric"><p>Presenciais</p><strong class="t-red">5</strong></div>
+            <div class="metric"><p>Domicílio</p><strong class="t-purple">2</strong></div>
+          </div>
+        </section>
+
+        <!-- ================== ESCALA DO DIA ================== -->
+        <section class="view" id="view-escala">
+          <div class="view__head">
+            <div>
+              <h1>Escala do Inglês</h1>
+              <p id="escalaDate"></p>
+            </div>
+            <button class="btn-red is-disabled">+ Adicionar Aula</button>
+          </div>
+
+          <div class="lessons" id="lessonsList"><!-- preenchido via JS --></div>
+
+          <p class="group-label">Resumo do dia</p>
+          <div class="wa-summary" id="waSummary"></div>
+          <button class="btn-green is-disabled">⧉ Copiar resumo</button>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>

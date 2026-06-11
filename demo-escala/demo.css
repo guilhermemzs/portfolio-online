@@ -1,0 +1,526 @@
+/* ============================================================
+   DEMONSTRAÇÃO — Help School · Sistema de Gestão
+   Reprodução estática da interface, com dados fictícios.
+   Paleta original: fundo #F8F8F8, sidebar #030712, destaque #dc2626.
+============================================================ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #dc2626;
+  --red-dark: #b91c1c;
+  --bg: #f8f8f8;
+  --ink: #111827;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --line: #e5e7eb;
+  --sidebar: #030712;
+  --banner-h: 38px;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font: inherit; border: none; background: none; }
+
+/* Elementos presentes só visualmente (sem função na demo) */
+.is-disabled { opacity: 0.45; cursor: not-allowed !important; pointer-events: none; }
+
+/* ---------- Faixa de demonstração ---------- */
+.demo-banner {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--banner-h);
+  z-index: 200;
+  background: #0b1f3a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 12px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.demo-banner a {
+  color: #e3c563;
+  font-weight: 600;
+  margin-left: 0.8rem;
+  white-space: nowrap;
+}
+
+.demo-banner a:hover { text-decoration: underline; }
+
+/* ---------- Marca Help school ---------- */
+.brand-help {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.brand-school {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.sidebar__head p,
+.login__brand p {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+/* ---------- Telas ---------- */
+.screen { display: none; }
+.screen.is-active { display: block; }
+
+/* ---------- Login ---------- */
+.screen--login {
+  min-height: 100vh;
+  padding-top: var(--banner-h);
+}
+
+.screen--login.is-active { display: flex; align-items: center; justify-content: center; }
+
+.login__box { width: min(380px, 92%); }
+
+.login__brand { text-align: center; margin-bottom: 2rem; }
+
+.login__brand .brand-help { color: var(--ink); font-size: 3rem; }
+.login__brand .brand-school { font-size: 1.25rem; color: var(--red); }
+
+.login__card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  padding: 2rem;
+}
+
+.login__card h1 { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.5rem; }
+
+.login__card label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+  margin-bottom: 1rem;
+}
+
+.login__card input {
+  width: 100%;
+  margin-top: 4px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: var(--ink);
+  background: #fafafa;
+}
+
+.login__hint {
+  text-align: center;
+  font-size: 12px;
+  color: var(--gray-400);
+  margin-top: 1rem;
+}
+
+/* ---------- Botões ---------- */
+.btn-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  background: var(--red);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  transition: background 0.2s;
+}
+
+.btn-red:hover { background: var(--red-dark); }
+
+.view__head .btn-red { width: auto; }
+
+.btn-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #16a34a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 9px 16px;
+  margin-top: 8px;
+}
+
+/* ---------- Layout do app ---------- */
+.screen--app {
+  padding-top: var(--banner-h);
+  min-height: 100vh;
+}
+
+.screen--app.is-active { display: flex; }
+
+.sidebar {
+  width: 224px;
+  background: var(--sidebar);
+  color: #9ca3af;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--banner-h));
+}
+
+.sidebar__head {
+  padding: 1.1rem 1rem;
+  border-bottom: 1px solid #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sidebar__close {
+  display: none;
+  color: #9ca3af;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.sidebar__nav { flex: 1; padding: 0.5rem 0; overflow-y: auto; }
+
+.sidebar__section {
+  padding: 8px 16px 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-top: 4px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #9ca3af;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar__link:hover { color: #fff; background: #1f2937; }
+.sidebar__link.is-active { background: var(--red); color: #fff; }
+
+.sidebar__note {
+  padding: 10px 16px;
+  font-size: 10.5px;
+  color: #4b5563;
+  border-top: 1px solid #1f2937;
+}
+
+.app-main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+
+/* ---------- Topbar ---------- */
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.topbar__burger { display: none; font-size: 20px; color: var(--gray-500); }
+
+.topbar__date {
+  font-size: 12px;
+  color: var(--gray-400);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.topbar__user { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+
+.topbar__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: 700;
+  font-size: 11px;
+  display: grid;
+  place-items: center;
+}
+
+.topbar__user-info { display: grid; line-height: 1.2; }
+.topbar__user-info strong { font-size: 13px; }
+.topbar__user-info small { font-size: 11px; color: var(--gray-400); }
+
+/* ---------- Conteúdo ---------- */
+.content { padding: 1.5rem; max-width: 1080px; width: 100%; }
+
+.view { display: none; }
+.view.is-active { display: block; }
+
+.view__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.view__head h1 { font-size: 1.25rem; font-weight: 700; }
+.view__head p { font-size: 13px; color: var(--gray-500); margin-top: 2px; }
+
+.group-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-400);
+  margin: 1.2rem 0 0.6rem;
+}
+
+/* ---------- Métricas ---------- */
+.metrics { display: grid; gap: 8px; }
+.metrics--4 { grid-template-columns: repeat(4, 1fr); }
+.metrics--5 { grid-template-columns: repeat(5, 1fr); }
+.metrics--6 { grid-template-columns: repeat(6, 1fr); }
+
+.metric {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-height: 74px;
+}
+
+.metric p {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray-400);
+  margin-bottom: 8px;
+}
+
+.metric strong { font-size: 1.5rem; font-weight: 700; }
+
+.t-green  { color: #15803d; }
+.t-red    { color: #b91c1c; }
+.t-yellow { color: #a16207; }
+.t-purple { color: #7e22ce; }
+.t-muted  { color: var(--gray-500); }
+
+/* ---------- Ações rápidas ---------- */
+.actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+
+.actions button {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #374151;
+  transition: box-shadow 0.2s;
+}
+
+.actions button:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+.chip {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+}
+
+.chip--blue   { background: #eff6ff; }
+.chip--purple { background: #faf5ff; }
+.chip--green  { background: #f0fdf4; }
+.chip--yellow { background: #fefce8; }
+.chip--red    { background: #fef2f2; }
+.chip--gray   { background: #f3f4f6; }
+
+/* ---------- Tabela do dashboard ---------- */
+.table-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 1.2rem;
+}
+
+.table-card__head {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-card__head p { font-size: 13.5px; font-weight: 700; color: #374151; }
+.table-card__head a { font-size: 12px; font-weight: 600; color: var(--red); }
+
+.table-wrap { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+
+th {
+  text-align: left;
+  padding: 8px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  background: #f9fafb;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+td { padding: 8px 16px; border-bottom: 1px solid #f9fafb; white-space: nowrap; }
+
+tr.is-cancelled { opacity: 0.4; }
+
+.mono { font-family: ui-monospace, monospace; font-weight: 700; }
+.student { color: var(--gray-400); font-size: 12px; font-weight: 400; }
+
+/* Badges de modalidade e status */
+.badge {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge--online     { background: #f3f4f6; color: #374151; }
+.badge--presencial { background: #fef2f2; color: #b91c1c; }
+.badge--domicilio  { background: #eff6ff; color: #1d4ed8; }
+.badge--confirmada { background: #f0fdf4; color: #15803d; }
+.badge--pendente   { background: #fefce8; color: #a16207; }
+.badge--cancelada  { background: #f3f4f6; color: var(--gray-500); }
+.badge--fixa       { background: transparent; color: #3b82f6; font-weight: 500; }
+
+/* ---------- Lista de aulas (escala) ---------- */
+.lessons { display: grid; gap: 8px; }
+
+.lesson {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.lesson.is-cancelled { opacity: 0.45; }
+
+.lesson__time {
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 92px;
+}
+
+.lesson__time small { color: var(--gray-400); font-weight: 500; }
+
+.lesson__main { flex: 1; min-width: 220px; }
+
+.lesson__line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.lesson__line strong { font-size: 14px; }
+
+.lesson__teacher { font-size: 12px; color: var(--gray-500); margin-top: 3px; }
+.lesson__teacher.no-teacher { color: var(--red); font-weight: 700; }
+
+.lesson__actions { display: flex; gap: 4px; margin-left: auto; }
+
+.lesson__actions button {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  color: var(--gray-500);
+  background: #fff;
+}
+
+/* ---------- Resumo estilo WhatsApp ---------- */
+.wa-summary {
+  background: var(--sidebar);
+  border-radius: 10px;
+  padding: 16px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  color: #4ade80;
+  white-space: pre;
+  overflow-x: auto;
+  line-height: 1.7;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 900px) {
+  .metrics--6 { grid-template-columns: repeat(3, 1fr); }
+  .metrics--5 { grid-template-columns: repeat(3, 1fr); }
+  .metrics--4 { grid-template-columns: repeat(2, 1fr); }
+  .actions { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: var(--banner-h);
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  }
+
+  .sidebar.is-open { transform: translateX(0); }
+  .sidebar__close { display: block; }
+  .topbar__burger { display: block; }
+  .demo-banner { font-size: 11px; }
+  .content { padding: 1rem; }
+}
