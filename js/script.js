@@ -9,7 +9,7 @@
    Para o WhatsApp, use o formato: https://wa.me/55DDDNUMERO
 ------------------------------------------------------------ */
 const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/guilherme-menezess/",
+  linkedin: "https://www.linkedin.com/in/guilherme-menezess/?locale=pt-BR",
   github: "https://github.com/guilhermemzs",
   whatsapp: "https://wa.me/5531998402007",
 };
