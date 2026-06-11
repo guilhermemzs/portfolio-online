@@ -9,9 +9,9 @@
    Para o WhatsApp, use o formato: https://wa.me/55DDDNUMERO
 ------------------------------------------------------------ */
 const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/SEU-PERFIL",
+  linkedin: "https://www.linkedin.com/in/guilherme-menezess/",
   github: "https://github.com/guilhermemzs",
-  whatsapp: "https://wa.me/55XXXXXXXXXXX",
+  whatsapp: "https://wa.me/5531998402007",
 };
 
 // Aplica as URLs em todos os botões marcados com data-link
