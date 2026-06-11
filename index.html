@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guilherme Menezes Pereira | Portfólio</title>
+  <meta name="description" content="Portfólio de Guilherme Menezes Pereira — Estudante de Engenharia Civil, Professor de Inglês e Coordenador Pedagógico e Logístico." />
+
+  <!-- Tipografia: Sora (títulos) + Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVEGAÇÃO FIXA
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container">
+      <a href="#inicio" class="navbar__brand">G<span>M</span>P</a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <!-- Alternância entre modo claro e escuro -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- Menu hamburguer (mobile) -->
+        <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         1. HERO / PÁGINA INICIAL
+    ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Portfólio profissional</p>
+          <h1 class="hero__name">Guilherme Menezes <span class="text-accent">Pereira</span></h1>
+          <h2 class="hero__title">
+            Estudante de Engenharia Civil&nbsp;· Professor de Inglês&nbsp;· Coordenador Pedagógico e Logístico
+          </h2>
+          <p class="hero__phrase">
+            “Unindo educação, tecnologia, organização e engenharia para construir soluções com propósito.”
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#experiencia" class="btn btn--primary">Ver trajetória</a>
+            <a href="#contato" class="btn btn--outline">Entrar em contato</a>
+            <a href="#" class="btn btn--ghost" data-link="linkedin" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-8.5c0-2-.04-4.6-2.8-4.6-2.8 0-3.23 2.2-3.23 4.45V24H8V8z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+
+          <ul class="hero__stats">
+            <li><strong>Educação</strong><span>Ensino &amp; coordenação</span></li>
+            <li><strong>Tecnologia</strong><span>Técnico em Informática</span></li>
+            <li><strong>Engenharia</strong><span>Civil — FUMEC</span></li>
+          </ul>
+        </div>
+
+        <!-- Foto principal (assets/images/perfil.jpg) -->
+        <div class="hero__photo reveal reveal--delay-1">
+          <div class="hero__photo-frame">
+            <img src="assets/images/perfil.jpg" alt="Guilherme Menezes Pereira" onerror="this.closest('.hero__photo').classList.add('is-empty')" />
+            <div class="hero__photo-fallback" aria-hidden="true">GMP</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a seção Sobre">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         2. SOBRE MIM
+    ============================================================ -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Sobre mim</p>
+          <h2 class="section__title">Trajetória construída entre <span class="text-accent">educação, gestão e engenharia</span></h2>
+        </div>
+
+        <div class="about__grid">
+          <!-- Foto da seção Sobre (assets/images/sobre.jpg) -->
+          <figure class="about__photo reveal">
+            <img src="assets/images/sobre.jpg" alt="Guilherme em Belo Horizonte" onerror="this.closest('.about__photo').classList.add('is-empty')" />
+            <figcaption>Belo Horizonte — Minas Gerais</figcaption>
+          </figure>
+
+          <div class="about__text reveal reveal--delay-1">
+            <p>
+              Sou estudante de <strong>Engenharia Civil na Universidade FUMEC</strong> e
+              <strong>técnico em Informática formado pelo COTEMIG</strong>. Atuo na área educacional
+              há alguns anos, especialmente no ensino de inglês e na organização pedagógica e
+              logística da <strong>Help School</strong>, onde acompanho de perto rotinas, pessoas e processos.
+            </p>
+            <p>
+              Essa combinação de experiências me permitiu desenvolver, desde cedo, uma visão
+              estruturada sobre <strong>gestão, comunicação e resolução de problemas</strong> — competências
+              que aplico diariamente e que pretendo levar para a engenharia, unindo organização,
+              tecnologia e propósito em cada projeto.
+            </p>
+            <p>
+              Tenho interesse em <strong>engenharia, gestão, tecnologia, educação, processos e liderança</strong>,
+              e acredito no aprendizado contínuo como caminho para crescer com responsabilidade e
+              construir uma carreira sólida e relevante.
+            </p>
+
+            <ul class="about__tags">
+              <li>Engenharia Civil</li>
+              <li>Educação</li>
+              <li>Gestão de processos</li>
+              <li>Tecnologia</li>
+              <li>Liderança</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. EXPERIÊNCIA PROFISSIONAL (linha do tempo)
+    ============================================================ -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Experiência profissional</p>
+          <h2 class="section__title">Onde tenho <span class="text-accent">atuado e evoluído</span></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__tag">Educação</span>
+              <h3>Professor de Inglês</h3>
+              <p class="timeline__org">Help School</p>
+              <p>
+                Atuação com aulas presenciais e online, acompanhamento individualizado de alunos,
+                adaptação de conteúdos e desenvolvimento da comunicação em inglês, com foco no
+                progresso real de cada estudante.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal reveal--delay-1">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__tag">Gestão</span>
+              <h3>Coordenador Pedagógico e Logístico</h3>
+              <p class="timeline__org">Help School</p>
+              <p>
+                Organização de escalas e controle de aulas, comunicação com professores, alunos e
+                responsáveis, acompanhamento da rotina pedagógica, remarcações e confirmações,
+                gestão de horários e melhoria contínua de processos internos.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal reveal--delay-2">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <span class="timeline__tag">Tecnologia</span>
+              <h3>Técnico em Informática</h3>
+              <p class="timeline__org">Formação COTEMIG</p>
+              <p>
+                Conhecimentos em tecnologia, suporte, organização de sistemas e ferramentas
+                digitais, aplicados na criação de soluções práticas para ambientes educacionais
+                e administrativos.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. FORMAÇÃO ACADÊMICA
+    ============================================================ -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Formação acadêmica</p>
+          <h2 class="section__title">Base sólida para <span class="text-accent">crescer com consistência</span></h2>
+        </div>
+
+        <div class="cards-grid cards-grid--2">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 1 8l11 5 9-4.09V14"/><path d="M5 10.6V16c0 1.66 3.13 3 7 3s7-1.34 7-3v-5.4"/></svg>
+            </div>
+            <h3>Engenharia Civil</h3>
+            <p class="card__org">Universidade FUMEC</p>
+            <p>Graduação em andamento, com início em 2026. Foco em construção civil, diagnóstico de edificações e gestão de projetos.</p>
+            <span class="card__badge">Em andamento</span>
+          </article>
+
+          <article class="card reveal reveal--delay-1">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9l3 3-3 3M13 14h4"/></svg>
+            </div>
+            <h3>Técnico em Informática</h3>
+            <p class="card__org">COTEMIG</p>
+            <p>Formação técnica com base em tecnologia, lógica de programação, suporte e desenvolvimento de soluções digitais.</p>
+            <span class="card__badge card__badge--done">Concluído</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. PROJETOS E ATIVIDADES
+    ============================================================ -->
+    <section class="section section--alt" id="projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Projetos e atividades</p>
+          <h2 class="section__title">Iniciativas que <span class="text-accent">colocam ideias em prática</span></h2>
+        </div>
+
+        <div class="cards-grid cards-grid--2">
+          <!-- Projeto em destaque, com fotos das apresentações -->
+          <article class="card card--featured reveal">
+            <div class="card__gallery">
+              <img src="assets/images/projeto-acessibilidade-1.jpg" alt="Apresentação do projeto de Engenharia Diagnóstica e Acessibilidade" onerror="this.remove()" />
+              <img src="assets/images/projeto-acessibilidade-2.jpg" alt="Guilherme apresentando o projeto de Engenharia Diagnóstica" onerror="this.remove()" />
+            </div>
+            <span class="card__area">Engenharia</span>
+            <h3>Engenharia Diagnóstica aplicada à Acessibilidade</h3>
+            <p>
+              Projeto de extensão realizado no SENAI Nova Lima: inspeção técnica, diagnóstico de
+              patologias, análise de causas e orientação técnica para identificar falhas e propor
+              soluções com foco em acessibilidade.
+            </p>
+          </article>
+
+          <article class="card reveal reveal--delay-1">
+            <span class="card__area">Engenharia · Química</span>
+            <h3>Química aplicada à Engenharia Civil</h3>
+            <p>
+              Trabalho acadêmico sobre a aplicação da química na construção civil, com foco no uso
+              da madeira como material construtivo: propriedades, tratamentos e desempenho.
+            </p>
+          </article>
+
+          <article class="card reveal reveal--delay-1">
+            <span class="card__area">Gestão</span>
+            <h3>Padronização de processos internos</h3>
+            <p>
+              Organização e padronização de rotinas operacionais na Help School: fluxos de
+              comunicação, controle de horários e processos mais claros e eficientes.
+            </p>
+          </article>
+
+          <article class="card reveal reveal--delay-2">
+            <span class="card__area">Educação</span>
+            <h3>Materiais pedagógicos e rotinas educacionais</h3>
+            <p>
+              Criação de materiais pedagógicos, simulados e relatórios de aula, além da organização
+              de rotinas educacionais que apoiam professores e alunos no dia a dia.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. HABILIDADES
+    ============================================================ -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Habilidades</p>
+          <h2 class="section__title">Competências em <span class="text-accent">quatro frentes</span></h2>
+        </div>
+
+        <div class="cards-grid cards-grid--4">
+          <article class="skill-card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3>Educação</h3>
+            <ul>
+              <li>Ensino de inglês</li>
+              <li>Planejamento de aulas</li>
+              <li>Comunicação com alunos e responsáveis</li>
+              <li>Acompanhamento pedagógico</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal reveal--delay-1">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
+            <h3>Gestão</h3>
+            <ul>
+              <li>Organização de escalas</li>
+              <li>Controle de horários</li>
+              <li>Gestão de processos</li>
+              <li>Liderança operacional</li>
+              <li>Comunicação profissional</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal reveal--delay-2">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Tecnologia</h3>
+            <ul>
+              <li>Informática</li>
+              <li>Ferramentas digitais</li>
+              <li>Organização de planilhas</li>
+              <li>Sistemas internos</li>
+              <li>Automação de processos</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal reveal--delay-3">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20M6 22V8l6-5 6 5v14M10 22v-5h4v5"/></svg>
+            </div>
+            <h3>Engenharia</h3>
+            <ul>
+              <li>Construção civil</li>
+              <li>Engenharia diagnóstica</li>
+              <li>Acessibilidade</li>
+              <li>Materiais de construção</li>
+              <li>Desenvolvimento acadêmico</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. DIFERENCIAIS
+    ============================================================ -->
+    <section class="section section--navy" id="diferenciais">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Diferenciais</p>
+          <h2 class="section__title">O que me <span class="text-accent">destaca</span></h2>
+        </div>
+
+        <ul class="diff-grid">
+          <li class="reveal">Perfil jovem, disciplinado e em desenvolvimento constante.</li>
+          <li class="reveal reveal--delay-1">Experiência prática com educação, gestão e tecnologia.</li>
+          <li class="reveal reveal--delay-2">Capacidade de comunicação formal e profissional.</li>
+          <li class="reveal">Interesse em unir engenharia, tecnologia e gestão.</li>
+          <li class="reveal reveal--delay-1">Facilidade para organizar processos e lidar com pessoas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. CONTATO
+    ============================================================ -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Contato</p>
+          <h2 class="section__title">Vamos <span class="text-accent">conversar</span>?</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__lead">
+              Estou aberto a oportunidades de estágio, projetos acadêmicos, parcerias e networking
+              profissional. Entre em contato pelos canais abaixo ou envie uma mensagem direta.
+            </p>
+
+            <ul class="contact__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                <a href="mailto:guilhermemp903@gmail.com">guilhermemp903@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Contagem, Minas Gerais, Brasil
+              </li>
+            </ul>
+
+            <!-- Links sociais: edite as URLs no início de js/script.js -->
+            <div class="contact__social">
+              <a href="#" class="btn btn--outline" data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="#" class="btn btn--outline" data-link="github" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn--outline" data-link="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- Formulário simples: abre o e-mail preenchido no cliente padrão -->
+          <form class="contact__form reveal reveal--delay-1" id="contactForm" novalidate>
+            <label>
+              Nome
+              <input type="text" name="nome" placeholder="Seu nome" required />
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="seu@email.com" required />
+            </label>
+            <label>
+              Mensagem
+              <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary btn--full">Enviar mensagem</button>
+            <p class="contact__form-hint" id="formHint" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Guilherme Menezes Pereira. Todos os direitos reservados.</p>
+      <a href="#inicio" class="footer__top" aria-label="Voltar ao topo">↑ Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
