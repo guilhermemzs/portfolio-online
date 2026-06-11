@@ -112,14 +112,21 @@ ul {
 }
 
 .navbar__brand {
-  font-family: "Sora", sans-serif;
-  font-weight: 800;
-  font-size: 1.35rem;
-  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
 }
 
-.navbar__brand span {
-  color: var(--gold);
+.navbar__brand img {
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(11, 31, 58, 0.25);
+  transition: transform var(--transition);
+}
+
+.navbar__brand:hover img {
+  transform: scale(1.06);
 }
 
 .navbar__links {
@@ -280,6 +287,14 @@ ul {
 
 .btn--full {
   width: 100%;
+}
+
+/* Ícones (imagens ou SVG) dentro de botões */
+.btn__icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* ============================================================
@@ -908,6 +923,19 @@ ul {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.footer__brand img {
+  height: 36px;
+  width: 36px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .footer__top {
