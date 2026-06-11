@@ -749,6 +749,25 @@ ul {
   grid-column: 1 / -1;
 }
 
+/* Card clicável (link para projeto/demonstração) */
+.card--link {
+  display: block;
+  cursor: pointer;
+}
+
+.card--link .card__cta {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--gold);
+  transition: transform var(--transition);
+}
+
+.card--link:hover .card__cta {
+  transform: translateX(4px);
+}
+
 /* ============================================================
    HABILIDADES
 ============================================================ */
