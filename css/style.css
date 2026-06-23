@@ -1082,6 +1082,29 @@ ul {
   font-size: 0.9rem;
 }
 
+.article-toc__card ol {
+  list-style: none;
+  counter-reset: article-toc;
+  padding-left: 0;
+}
+
+.article-toc__card ol li {
+  counter-increment: article-toc;
+}
+
+.article-toc__card ol li a {
+  display: grid;
+  grid-template-columns: 2.1rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.article-toc__card ol li a::before {
+  content: counter(article-toc) ".";
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
 .article-toc__card a:hover {
   color: var(--gold);
 }
