@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artigos | Guilherme Menezes Pereira</title>
+  <meta name="description" content="Artigos de Guilherme Menezes Pereira sobre inglês, educação, aprendizagem, tecnologia, gestão e engenharia." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container">
+      <a href="../index.html#inicio" class="navbar__brand">
+        <img src="../assets/images/logo.png" alt="GMP — Guilherme Menezes Pereira" />
+      </a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="../index.html#inicio">Início</a></li>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#experiencia">Experiência</a></li>
+        <li><a href="../index.html#formacao">Formação</a></li>
+        <li><a href="../index.html#projetos">Projetos</a></li>
+        <li><a class="is-active" href="./">Artigos</a></li>
+        <li><a href="../index.html#habilidades">Habilidades</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="container blog-hero__grid">
+        <div class="reveal">
+          <span class="article-kicker">Artigos</span>
+          <h1>Um espaço para transformar experiência em conteúdo útil.</h1>
+          <p class="blog-hero__lead">
+            Textos autorais sobre inglês, educação, aprendizagem, gestão, tecnologia e engenharia.
+            A proposta é compartilhar reflexões práticas, histórias reais e materiais que possam ajudar outras pessoas.
+          </p>
+          <div class="article-actions">
+            <a class="btn btn--primary" href="#lista">Ler publicações</a>
+            <a class="btn btn--outline" href="../index.html#contato">Sugerir um tema</a>
+          </div>
+        </div>
+
+        <aside class="blog-hero__panel reveal reveal--delay-1" aria-label="Resumo editorial">
+          <ul class="blog-stats">
+            <li><strong>01</strong><span>artigo publicado</span></li>
+            <li><strong>06</strong><span>temas editoriais em construção</span></li>
+            <li><strong>PDF</strong><span>materiais originais disponíveis para leitura</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="lista">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Publicações</p>
+          <h2 class="section__title">Artigos recentes</h2>
+          <p class="section__intro">A página já está estruturada para crescer como um blog dentro do portfólio.</p>
+        </div>
+
+        <div class="blog-list">
+          <a class="article-card reveal" href="beneficios-aprender-segunda-lingua/">
+            <span class="article-card__label">Educação · Inglês</span>
+            <p class="article-card__meta">23 jun 2026 · 8 min de leitura</p>
+            <h3>7 benefícios de aprender uma segunda língua que transformaram minha vida</h3>
+            <p>
+              Uma reflexão pessoal sobre confiança, carreira, estudos, cultura, criatividade e constância no aprendizado de inglês.
+            </p>
+            <div class="article-card__tags">
+              <span>Inglês</span>
+              <span>Desenvolvimento pessoal</span>
+              <span>Educação</span>
+            </div>
+            <span class="card__cta">Ler agora →</span>
+          </a>
+
+          <article class="article-card article-card--placeholder reveal reveal--delay-1">
+            <span class="article-card__label">Em breve</span>
+            <p class="article-card__meta">Novas publicações</p>
+            <h3>Próximos temas do blog</h3>
+            <p>
+              Esta área está pronta para receber textos sobre rotina de estudos, medo de falar inglês,
+              processos educacionais, tecnologia aplicada à gestão e experiências acadêmicas.
+            </p>
+            <div class="article-card__tags">
+              <span>Estudos</span>
+              <span>Gestão</span>
+              <span>Engenharia</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../assets/images/logo.png" alt="Logo GMP" />
+        <p>© <span id="year"></span> Guilherme Menezes Pereira. Todos os direitos reservados.</p>
+      </div>
+      <a href="../index.html#inicio" class="footer__top" aria-label="Voltar para a página inicial">← Voltar ao portfólio</a>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

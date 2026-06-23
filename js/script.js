@@ -31,10 +31,12 @@ const savedTheme = localStorage.getItem("theme");
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 root.dataset.theme = savedTheme || (systemDark ? "dark" : "light");
 
-themeToggle.addEventListener("click", () => {
-  root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", root.dataset.theme);
-});
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", root.dataset.theme);
+  });
+}
 
 /* ------------------------------------------------------------
    NAVBAR — sombra ao rolar e menu mobile
@@ -43,24 +45,28 @@ const navbar = document.getElementById("navbar");
 const navBurger = document.getElementById("navBurger");
 const navLinks = document.getElementById("navLinks");
 
-window.addEventListener("scroll", () => {
-  navbar.classList.toggle("is-scrolled", window.scrollY > 10);
-});
+if (navbar) {
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("is-scrolled", window.scrollY > 10);
+  });
+}
 
-navBurger.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("is-open");
-  navBurger.classList.toggle("is-open", open);
-  navBurger.setAttribute("aria-expanded", open);
-});
+if (navBurger && navLinks) {
+  navBurger.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("is-open");
+    navBurger.classList.toggle("is-open", open);
+    navBurger.setAttribute("aria-expanded", open);
+  });
 
-// Fecha o menu mobile ao clicar em um link
-navLinks.addEventListener("click", (e) => {
-  if (e.target.tagName === "A") {
-    navLinks.classList.remove("is-open");
-    navBurger.classList.remove("is-open");
-    navBurger.setAttribute("aria-expanded", "false");
-  }
-});
+  // Fecha o menu mobile ao clicar em um link
+  navLinks.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      navLinks.classList.remove("is-open");
+      navBurger.classList.remove("is-open");
+      navBurger.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
 /* ------------------------------------------------------------
    ANIMAÇÕES AO ROLAR — revela elementos .reveal ao entrarem na tela
@@ -110,29 +116,32 @@ sections.forEach((section) => sectionObserver.observe(section));
 const form = document.getElementById("contactForm");
 const formHint = document.getElementById("formHint");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+if (form && formHint) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  const nome = form.nome.value.trim();
-  const email = form.email.value.trim();
-  const mensagem = form.mensagem.value.trim();
+    const nome = form.nome.value.trim();
+    const email = form.email.value.trim();
+    const mensagem = form.mensagem.value.trim();
 
-  if (!nome || !email || !mensagem) {
-    formHint.textContent = "Por favor, preencha todos os campos.";
-    return;
-  }
+    if (!nome || !email || !mensagem) {
+      formHint.textContent = "Por favor, preencha todos os campos.";
+      return;
+    }
 
-  const assunto = encodeURIComponent(`Contato pelo portfólio — ${nome}`);
-  const corpo = encodeURIComponent(
-    `Nome: ${nome}\nE-mail: ${email}\n\n${mensagem}`
-  );
+    const assunto = encodeURIComponent(`Contato pelo portfólio — ${nome}`);
+    const corpo = encodeURIComponent(
+      `Nome: ${nome}\nE-mail: ${email}\n\n${mensagem}`
+    );
 
-  window.location.href = `mailto:guilhermemp903@gmail.com?subject=${assunto}&body=${corpo}`;
-  formHint.textContent = "Abrindo seu aplicativo de e-mail...";
-  form.reset();
-});
+    window.location.href = `mailto:guilhermemp903@gmail.com?subject=${assunto}&body=${corpo}`;
+    formHint.textContent = "Abrindo seu aplicativo de e-mail...";
+    form.reset();
+  });
+}
 
 /* ------------------------------------------------------------
    ANO ATUAL NO RODAPÉ
 ------------------------------------------------------------ */
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
