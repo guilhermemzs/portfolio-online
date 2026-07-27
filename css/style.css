@@ -680,9 +680,10 @@ ul {
   padding: 0.45rem 0.65rem;
 }
 
-.timeline__brand--wide {
-  width: 11.25rem;
-  padding: 0.7rem 0.9rem;
+.timeline__brand--square {
+  width: 5.5rem;
+  height: 5.5rem;
+  padding: 0.25rem;
 }
 
 .timeline__card h3 {
