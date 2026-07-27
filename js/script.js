@@ -21,6 +21,32 @@ document.querySelectorAll("[data-link]").forEach((el) => {
 });
 
 /* ------------------------------------------------------------
+   DURAÇÃO DAS EXPERIÊNCIAS
+   Conta os meses de forma inclusiva, como em currículos profissionais.
+------------------------------------------------------------ */
+const formatDuration = (totalMonths) => {
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+  const parts = [];
+
+  if (years) parts.push(`${years} ${years === 1 ? "ano" : "anos"}`);
+  if (months) parts.push(`${months} ${months === 1 ? "mês" : "meses"}`);
+
+  return parts.join(" e ");
+};
+
+document.querySelectorAll("[data-duration-start]").forEach((el) => {
+  const [startYear, startMonth] = el.dataset.durationStart.split("-").map(Number);
+  const now = new Date();
+  const endParts = el.dataset.durationEnd?.split("-").map(Number);
+  const endYear = endParts?.[0] ?? now.getFullYear();
+  const endMonth = endParts?.[1] ?? now.getMonth() + 1;
+  const totalMonths = (endYear - startYear) * 12 + endMonth - startMonth + 1;
+
+  if (totalMonths > 0) el.textContent = formatDuration(totalMonths);
+});
+
+/* ------------------------------------------------------------
    TEMA CLARO / ESCURO
    Preferência salva em localStorage; padrão segue o sistema.
 ------------------------------------------------------------ */

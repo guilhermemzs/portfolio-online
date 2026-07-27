@@ -646,7 +646,22 @@ ul {
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--text-soft);
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.timeline__period {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.4rem;
+  align-items: center;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  margin-bottom: 0.85rem;
+}
+
+.timeline__duration {
+  font-weight: 600;
+  color: var(--gold);
 }
 
 /* ============================================================
