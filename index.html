@@ -17,7 +17,7 @@
   <meta property="og:description" content="Conheça a trajetória, os projetos e os artigos de Guilherme Menezes Pereira nas áreas de engenharia civil, educação, gestão e tecnologia." />
   <meta property="og:url" content="https://guilhermemenezespereira.com/" />
   <meta property="og:image" content="https://guilhermemenezespereira.com/assets/images/perfil-neve.jpg" />
-  <meta property="og:image:alt" content="Guilherme Menezes Pereira" />
+  <meta property="og:image:alt" content="Guilherme Menezes Pereira em Lucerna, Suíça" />
   <meta property="profile:first_name" content="Guilherme" />
   <meta property="profile:last_name" content="Menezes Pereira" />
 
@@ -25,6 +25,7 @@
   <meta name="twitter:title" content="Guilherme Menezes Pereira | Portfólio profissional" />
   <meta name="twitter:description" content="Engenharia civil, educação, gestão, tecnologia, projetos e artigos de Guilherme Menezes Pereira." />
   <meta name="twitter:image" content="https://guilhermemenezespereira.com/assets/images/perfil-neve.jpg" />
+  <meta name="twitter:image:alt" content="Guilherme Menezes Pereira em Lucerna, Suíça" />
 
   <!-- Tipografia: Sora (títulos) + Inter (texto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -166,10 +167,17 @@
 
         <!-- Foto principal (assets/images/perfil-neve.jpg) -->
         <div class="hero__photo reveal reveal--delay-1">
-          <div class="hero__photo-frame">
-            <img src="assets/images/perfil-neve.jpg" alt="Guilherme Menezes Pereira em uma paisagem de montanhas nevadas" onerror="this.closest('.hero__photo').classList.add('is-empty')" />
+          <figure class="hero__photo-frame">
+            <img src="assets/images/perfil-neve.jpg" alt="Guilherme Menezes Pereira em uma paisagem de montanhas nevadas em Lucerna, Suíça" onerror="this.closest('.hero__photo').classList.add('is-empty')" />
             <div class="hero__photo-fallback" aria-hidden="true">GMP</div>
-          </div>
+            <figcaption class="hero__photo-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              Lucerna, Suíça
+            </figcaption>
+          </figure>
         </div>
       </div>
 
