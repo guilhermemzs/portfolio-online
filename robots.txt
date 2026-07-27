@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-guilhermepereira.vercel.app/sitemap.xml
+Sitemap: https://guilhermemenezespereira.com/sitemap.xml
