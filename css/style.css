@@ -1164,6 +1164,10 @@ ul {
   align-items: start;
 }
 
+.article-layout > * {
+  min-width: 0;
+}
+
 .article-toc {
   position: sticky;
   top: calc(var(--nav-height) + 1.5rem);
@@ -1312,6 +1316,7 @@ ul {
 }
 
 .article-table-wrap {
+  max-width: 100%;
   margin: 2rem 0;
   overflow-x: auto;
   border: 1px solid var(--line);
@@ -1458,11 +1463,16 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  align-items: start;
   margin: 2rem 0;
 }
 
 .article-gallery--project {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas:
+    "feature feature"
+    "portrait audience"
+    "portrait team";
 }
 
 .article-gallery figure {
@@ -1479,13 +1489,39 @@ ul {
 
 .article-gallery img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
 .article-gallery figure:first-child img {
-  aspect-ratio: 16 / 8;
+  aspect-ratio: 16 / 9;
+}
+
+.article-gallery--project figure:nth-child(1) {
+  grid-area: feature;
+}
+
+.article-gallery--project figure:nth-child(2) {
+  grid-area: portrait;
+}
+
+.article-gallery--project figure:nth-child(3) {
+  grid-area: audience;
+}
+
+.article-gallery--project figure:nth-child(4) {
+  grid-area: team;
+}
+
+.article-gallery--project figure:nth-child(2) img {
+  aspect-ratio: 2 / 3;
+  object-position: center 42%;
+}
+
+.article-gallery--project figure:last-child img {
+  aspect-ratio: 16 / 9;
 }
 
 .article-gallery figure:hover img {
@@ -1798,6 +1834,10 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .article-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .article-toc {
     position: static;
   }
@@ -1867,12 +1907,26 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .article-gallery--project {
+    grid-template-areas:
+      "feature"
+      "portrait"
+      "audience"
+      "team";
+  }
+
   .article-gallery figure:first-child {
     grid-column: auto;
   }
 
   .article-gallery figure:first-child img,
   .article-gallery img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .article-gallery--project img,
+  .article-gallery--project figure:nth-child(2) img,
+  .article-gallery--project figure:last-child img {
     aspect-ratio: 4 / 3;
   }
 
@@ -1901,3 +1955,4 @@ ul {
     gap: 1.4rem;
   }
 }
+
