@@ -632,8 +632,8 @@ ul {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  min-height: 3rem;
-  margin-bottom: 0.15rem;
+  min-height: 4.75rem;
+  margin-bottom: 0.35rem;
 }
 
 .timeline__tag {
@@ -659,6 +659,7 @@ ul {
 
 .brand-logo--light {
   background: #fff;
+  border-color: rgba(7, 25, 44, 0.12);
 }
 
 .brand-logo--dark {
@@ -674,14 +675,14 @@ ul {
 }
 
 .timeline__brand {
-  width: 4.75rem;
-  height: 3rem;
-  padding: 0.2rem 0.45rem;
+  width: 9.5rem;
+  height: 4.75rem;
+  padding: 0.45rem 0.65rem;
 }
 
 .timeline__brand--wide {
-  width: 8.25rem;
-  padding: 0.45rem 0.7rem;
+  width: 11.25rem;
+  padding: 0.7rem 0.9rem;
 }
 
 .timeline__card h3 {
@@ -754,14 +755,14 @@ ul {
 }
 
 .card__brand {
-  width: 9rem;
-  height: 3.5rem;
-  padding: 0.55rem 0.85rem;
-  margin-bottom: 1.1rem;
+  width: 12rem;
+  height: 5.25rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .card__brand--compact {
-  width: 6.5rem;
+  width: 10rem;
 }
 
 .card h3 {
