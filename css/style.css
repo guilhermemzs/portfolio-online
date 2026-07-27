@@ -627,6 +627,15 @@ ul {
   border-color: var(--gold);
 }
 
+.timeline__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3rem;
+  margin-bottom: 0.15rem;
+}
+
 .timeline__tag {
   display: inline-block;
   font-size: 0.72rem;
@@ -635,6 +644,44 @@ ul {
   letter-spacing: 0.14em;
   color: var(--gold);
   margin-bottom: 0.5rem;
+}
+
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(4, 17, 31, 0.12);
+}
+
+.brand-logo--light {
+  background: #fff;
+}
+
+.brand-logo--dark {
+  background: #07192c;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.brand-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.timeline__brand {
+  width: 4.75rem;
+  height: 3rem;
+  padding: 0.2rem 0.45rem;
+}
+
+.timeline__brand--wide {
+  width: 8.25rem;
+  padding: 0.45rem 0.7rem;
 }
 
 .timeline__card h3 {
@@ -704,6 +751,17 @@ ul {
 .card__icon svg {
   width: 26px;
   height: 26px;
+}
+
+.card__brand {
+  width: 9rem;
+  height: 3.5rem;
+  padding: 0.55rem 0.85rem;
+  margin-bottom: 1.1rem;
+}
+
+.card__brand--compact {
+  width: 6.5rem;
 }
 
 .card h3 {
