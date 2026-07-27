@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engenharia diagnóstica e acessibilidade | Guilherme Menezes</title>
+  <meta name="description" content="Conheça o projeto de extensão da FUMEC que uniu engenharia diagnóstica, acessibilidade e conscientização no SENAI Nova Lima." />
+  <meta name="author" content="Guilherme Menezes Pereira" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://guilhermemenezespereira.com/artigos/engenharia-diagnostica-acessibilidade/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Portfólio de Guilherme Menezes Pereira" />
+  <meta property="og:title" content="Engenharia diagnóstica e acessibilidade: aprendizados de um projeto de extensão" />
+  <meta property="og:description" content="Pesquisa, normas técnicas, 72 respostas e uma ação educativa realizada no SENAI Nova Lima." />
+  <meta property="og:url" content="https://guilhermemenezespereira.com/artigos/engenharia-diagnostica-acessibilidade/" />
+  <meta property="og:image" content="https://guilhermemenezespereira.com/assets/articles/images/engenharia-diagnostica-hero.jpg" />
+  <meta property="og:image:alt" content="Apresentação do projeto de engenharia diagnóstica e acessibilidade no SENAI Nova Lima" />
+  <meta property="article:published_time" content="2026-07-27" />
+  <meta property="article:modified_time" content="2026-07-27" />
+  <meta property="article:author" content="Guilherme Menezes Pereira" />
+  <meta property="article:section" content="Engenharia Civil" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Engenharia diagnóstica e acessibilidade" />
+  <meta name="twitter:description" content="O que aprendi em um projeto de extensão da FUMEC realizado no SENAI Nova Lima." />
+  <meta name="twitter:image" content="https://guilhermemenezespereira.com/assets/articles/images/engenharia-diagnostica-hero.jpg" />
+  <meta name="twitter:image:alt" content="Apresentação do projeto de engenharia diagnóstica e acessibilidade no SENAI Nova Lima" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png" />
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://guilhermemenezespereira.com/artigos/engenharia-diagnostica-acessibilidade/#article",
+    "url": "https://guilhermemenezespereira.com/artigos/engenharia-diagnostica-acessibilidade/",
+    "mainEntityOfPage": "https://guilhermemenezespereira.com/artigos/engenharia-diagnostica-acessibilidade/",
+    "headline": "Engenharia diagnóstica e acessibilidade: aprendizados de um projeto de extensão no SENAI Nova Lima",
+    "image": "https://guilhermemenezespereira.com/assets/articles/images/engenharia-diagnostica-hero.jpg",
+    "author": {
+      "@type": "Person",
+      "@id": "https://guilhermemenezespereira.com/#guilherme-menezes-pereira",
+      "name": "Guilherme Menezes Pereira",
+      "url": "https://guilhermemenezespereira.com/"
+    },
+    "datePublished": "2026-07-27",
+    "dateModified": "2026-07-27",
+    "inLanguage": "pt-BR",
+    "articleSection": "Engenharia Civil",
+    "description": "Relato do projeto de extensão da Universidade FUMEC sobre engenharia diagnóstica aplicada à acessibilidade, apresentado no SENAI Nova Lima.",
+    "keywords": [
+      "engenharia diagnóstica",
+      "acessibilidade",
+      "extensão universitária",
+      "inspeção predial",
+      "SENAI Nova Lima"
+    ],
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Engenharia diagnóstica"
+      },
+      {
+        "@type": "Thing",
+        "name": "Acessibilidade"
+      }
+    ],
+    "mentions": [
+      {
+        "@type": "Organization",
+        "name": "Universidade FUMEC"
+      },
+      {
+        "@type": "Organization",
+        "name": "SENAI Nova Lima"
+      }
+    ],
+    "publisher": {
+      "@type": "Person",
+      "@id": "https://guilhermemenezespereira.com/#guilherme-menezes-pereira",
+      "name": "Guilherme Menezes Pereira"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container">
+      <a href="../../index.html#inicio" class="navbar__brand">
+        <img src="../../assets/images/logo.png" alt="GMP — Guilherme Menezes Pereira" />
+      </a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="../../index.html#inicio">Início</a></li>
+        <li><a href="../../index.html#sobre">Sobre</a></li>
+        <li><a href="../../index.html#experiencia">Experiência</a></li>
+        <li><a href="../../index.html#formacao">Formação</a></li>
+        <li><a href="../../index.html#projetos">Projetos</a></li>
+        <li><a class="is-active" href="../">Artigos</a></li>
+        <li><a href="../../index.html#habilidades">Habilidades</a></li>
+        <li><a href="../../index.html#contato">Contato</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero">
+      <div class="container article-hero__grid">
+        <div class="article-hero__content reveal">
+          <a class="article-kicker" href="../">Artigos · Engenharia Civil</a>
+          <div class="article-meta">
+            <span>Por Guilherme Menezes Pereira</span>
+            <span><time datetime="2026-07-27">27 de julho de 2026</time></span>
+            <span>10 min de leitura</span>
+          </div>
+          <h1>Engenharia diagnóstica e acessibilidade: aprendizados de um projeto de extensão</h1>
+          <p class="article-hero__lead">
+            Como pesquisa, normas técnicas e 72 respostas se transformaram em uma experiência de
+            conscientização sobre segurança, autonomia e inclusão no SENAI Nova Lima.
+          </p>
+          <div class="article-actions">
+            <a class="btn btn--primary" href="#artigo">Ler artigo</a>
+            <a class="btn btn--outline" href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">Ver site do projeto</a>
+          </div>
+        </div>
+
+        <aside class="article-hero__panel reveal reveal--delay-1" aria-label="Resultados em destaque">
+          <span class="article-kicker">O projeto em números</span>
+          <ul class="blog-stats">
+            <li><strong>72</strong><span>respostas no questionário</span></li>
+            <li><strong>97,2%</strong><span>reconhecem o risco de acidentes</span></li>
+            <li><strong>28 mai 2026</strong><span>seminário no SENAI Nova Lima</span></li>
+          </ul>
+          <div class="certificate-mini">
+            <strong>FUMEC + SENAI Nova Lima</strong>
+            <span>Extensão universitária · Engenharia Civil</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="artigo">
+      <div class="container article-layout">
+        <aside class="article-toc reveal" aria-label="Navegação do artigo">
+          <div class="article-toc__card">
+            <h2>Neste artigo</h2>
+            <ol>
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#diagnostico">Olhar diagnóstico</a></li>
+              <li><a href="#acessibilidade">Acessibilidade</a></li>
+              <li><a href="#metodologia">Metodologia</a></li>
+              <li><a href="#seminario">Seminário</a></li>
+              <li><a href="#resultados">Resultados</a></li>
+              <li><a href="#impacto">Atividade e impacto</a></li>
+              <li><a href="#aprendizados">Aprendizados</a></li>
+              <li><a href="#proximos-passos">Próximos passos</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ol>
+          </div>
+
+          <div class="article-toc__card">
+            <h3>Projeto completo</h3>
+            <div class="article-downloads">
+              <a href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">Acessar o site do projeto</a>
+            </div>
+          </div>
+        </aside>
+
+        <article class="article-content">
+          <h2 id="introducao">Introdução</h2>
+          <p>
+            Uma rampa pode existir e ainda não ser segura. Um piso tátil pode estar instalado e, mesmo assim,
+            ser interrompido por obstáculos. Um corrimão pode parecer adequado à primeira vista, mas estar
+            solto, deteriorado ou mal posicionado.
+          </p>
+          <p>
+            Foi a partir dessa diferença — entre simplesmente existir e realmente funcionar — que
+            desenvolvemos o projeto de extensão <strong>Engenharia Diagnóstica e Acessibilidade</strong>,
+            no curso de Engenharia Civil da Universidade FUMEC. O objetivo foi aproximar o conhecimento
+            técnico da realidade cotidiana e mostrar como inspeção, diagnóstico e manutenção preventiva
+            contribuem para ambientes mais seguros, acessíveis e inclusivos.
+          </p>
+          <p>
+            O trabalho reuniu pesquisa bibliográfica, estudo de normas técnicas, observação de pontos de
+            acessibilidade, produção de material educativo, aplicação de questionário e uma ação de
+            conscientização no SENAI Nova Lima. Para mim, foi também uma oportunidade de perceber, ainda
+            nos primeiros períodos da graduação, que a engenharia começa antes do cálculo de uma solução:
+            ela começa pela capacidade de observar, interpretar e comunicar um problema com responsabilidade.
+          </p>
+
+          <h2 id="diagnostico">Engenharia diagnóstica além dos reparos</h2>
+          <p>
+            A engenharia diagnóstica investiga o estado de uma edificação ou de seus sistemas para
+            identificar manifestações patológicas, compreender possíveis causas e orientar medidas
+            corretivas ou preventivas. Em termos práticos, ela ajuda a responder quatro perguntas:
+          </p>
+          <ol>
+            <li>O que está acontecendo?</li>
+            <li>Por que o problema pode ter surgido?</li>
+            <li>Qual é o risco associado a ele?</li>
+            <li>Que tipo de ação técnica deve ser considerada?</li>
+          </ol>
+          <p>
+            No projeto, organizamos essa lógica em quatro eixos: <strong>inspeção técnica, identificação
+            de patologias, análise das causas e orientação técnica</strong>. Esse percurso evita olhar
+            apenas para o sinal visível. Uma fissura, um desnível ou um corrimão instável não são somente
+            imperfeições estéticas; podem indicar falhas de projeto, execução, uso ou manutenção e afetar
+            diretamente a segurança de quem utiliza o espaço.
+          </p>
+          <blockquote>
+            Identificar falhas, compreender causas e orientar soluções: esse foi o princípio que conduziu o projeto.
+          </blockquote>
+
+          <h2 id="acessibilidade">Por que colocar a acessibilidade no centro?</h2>
+          <p>
+            A acessibilidade não se resume à presença de uma rampa ou de uma placa. Ela depende do
+            funcionamento integrado de rotas, pisos, inclinações, corrimãos, escadas, sinalização e
+            áreas de circulação.
+          </p>
+          <p>
+            Por isso, nosso olhar abrangeu tanto manifestações construtivas — como fissuras, desgaste,
+            infiltrações e desníveis — quanto falhas de instalação, sinalização e manutenção. Entre os
+            exemplos estudados estavam:
+          </p>
+          <ul>
+            <li>rampas com inclinação inadequada, fissuras ou desníveis;</li>
+            <li>pisos quebrados, irregulares ou escorregadios;</li>
+            <li>piso tátil ausente, danificado, descontínuo ou obstruído;</li>
+            <li>corrimãos soltos, deteriorados, ausentes ou instalados de forma inadequada;</li>
+            <li>degraus sem sinalização;</li>
+            <li>obstáculos em rotas que deveriam permanecer livres.</li>
+          </ul>
+          <p>
+            Essas situações podem reduzir a autonomia e aumentar o risco de acidentes, especialmente
+            para pessoas com deficiência, pessoas idosas, gestantes e pessoas com mobilidade reduzida.
+            Acessibilidade não é um detalhe posterior da obra: é uma condição de segurança, dignidade
+            e uso adequado do espaço.
+          </p>
+
+          <h2 id="metodologia">Da pesquisa à ação</h2>
+          <p>
+            Adotamos uma abordagem de <strong>pesquisa-ação</strong>, combinando estudo técnico e
+            atividade educativa. O processo foi organizado em sete etapas:
+          </p>
+          <ol>
+            <li>pesquisa bibliográfica sobre engenharia diagnóstica, patologias e acessibilidade;</li>
+            <li>estudo das ABNT NBR 9050, NBR 16747 e NBR 15575;</li>
+            <li>observação e registro fotográfico de mais de oito pontos de acessibilidade;</li>
+            <li>classificação dos problemas conforme o tipo, a urgência e o impacto no uso;</li>
+            <li>criação de folder, apresentação e recursos digitais em linguagem acessível;</li>
+            <li>aplicação de questionário eletrônico;</li>
+            <li>apresentação dos resultados à comunidade escolar.</li>
+          </ol>
+          <p>
+            As normas ofereceram a base para transformar observações em critérios. A ABNT NBR 9050
+            orientou a leitura dos elementos de acessibilidade; a NBR 16747 contribuiu com princípios
+            de inspeção predial; e a NBR 15575 ampliou a discussão sobre desempenho das edificações.
+          </p>
+
+          <div class="article-stats-grid" aria-label="Síntese da metodologia">
+            <div class="article-stat">
+              <strong>8+</strong>
+              <span>pontos de acessibilidade analisados</span>
+            </div>
+            <div class="article-stat">
+              <strong>3</strong>
+              <span>normas técnicas de referência</span>
+            </div>
+            <div class="article-stat">
+              <strong>2026</strong>
+              <span>ano de realização do projeto</span>
+            </div>
+          </div>
+
+          <div class="article-note">
+            <p>
+              <strong>Escopo educativo:</strong> não realizamos um laudo profissional nem uma certificação
+              de conformidade. A proposta foi exercitar a leitura técnica do ambiente construído e traduzir
+              esse conhecimento para a comunidade escolar.
+            </p>
+          </div>
+
+          <p>
+            Mais do que reunir referências, precisávamos transformar conteúdo técnico em comunicação.
+            O folder sintetizou os conceitos e os benefícios da identificação precoce. A apresentação
+            organizou o raciocínio visualmente, enquanto o
+            <a href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">site do projeto</a>
+            ampliou o acesso ao conteúdo com explicações, metodologia, checklist, galeria e referências.
+          </p>
+
+          <h2 id="seminario">O encontro com os alunos do SENAI Nova Lima</h2>
+          <p>
+            O projeto foi concluído em <strong>28 de maio de 2026</strong>, com a realização do
+            Seminário dos Resultados no SENAI Nova Lima. A equipe foi formada por Bernardo Lopes,
+            Emily Suelen, Guilherme Menezes, Gustavo Fanuchi e Luis Fernando, sob orientação da
+            professora Sônia de Oliveira Barbosa Andrade.
+          </p>
+          <p>
+            Durante a apresentação, explicamos como reconhecer falhas em rampas, pisos, corrimãos,
+            escadas e sinalização; discutimos possíveis causas; e mostramos por que inspeções e
+            manutenções periódicas são importantes. A intenção não era formar especialistas em uma
+            única conversa, mas oferecer referências para que problemas frequentemente naturalizados
+            passassem a ser percebidos como questões de segurança e inclusão.
+          </p>
+          <p>
+            A experiência também exigiu uma competência essencial para qualquer engenheiro: adaptar
+            a linguagem ao público sem perder a precisão. Relacionar conceitos a situações visíveis
+            no dia a dia transformou um trabalho acadêmico em uma experiência real de comunicação.
+          </p>
+
+          <div class="article-gallery article-gallery--project" aria-label="Registros do projeto no SENAI Nova Lima">
+            <figure>
+              <img src="../../assets/articles/images/engenharia-diagnostica-hero.jpg" alt="Equipe apresenta o projeto de engenharia diagnóstica para alunos do SENAI Nova Lima" width="1200" height="630" loading="lazy" />
+              <figcaption>Seminário dos Resultados realizado no SENAI Nova Lima em 28 de maio de 2026.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../assets/articles/images/engenharia-diagnostica-guilherme.jpg" alt="Guilherme Menezes explica os eixos da engenharia diagnóstica durante a apresentação" width="750" height="1000" loading="lazy" />
+              <figcaption>Apresentação dos quatro eixos: inspeção, diagnóstico, análise das causas e orientação técnica.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../assets/articles/images/engenharia-diagnostica-equipe.jpg" alt="Integrantes da equipe apresentam um slide sobre ambientes mais seguros" width="1000" height="750" loading="lazy" />
+              <figcaption>Conscientização sobre prevenção, segurança, inclusão e educação.</figcaption>
+            </figure>
+            <figure>
+              <img src="../../assets/articles/images/engenharia-diagnostica-senai.jpg" alt="Guilherme e integrantes da equipe diante do painel do SENAI Nova Lima" width="590" height="330" loading="lazy" />
+              <figcaption>Registro da equipe após a ação de extensão no SENAI Nova Lima.</figcaption>
+            </figure>
+          </div>
+
+          <h2 id="resultados">O que 72 respostas revelaram</h2>
+          <p>
+            O questionário eletrônico reuniu <strong>72 respostas</strong>. Do público participante,
+            81,9% cursavam o ensino técnico, 9,7% o ensino superior e 8,4% estavam em outras modalidades.
+          </p>
+
+          <div class="article-stats-grid" aria-label="Principais resultados do questionário">
+            <div class="article-stat">
+              <strong>87,5%</strong>
+              <span>viram corrimão solto ou mal instalado</span>
+            </div>
+            <div class="article-stat">
+              <strong>83,3%</strong>
+              <span>viram piso tátil danificado ou ausente</span>
+            </div>
+            <div class="article-stat">
+              <strong>80,6%</strong>
+              <span>viram rampas muito inclinadas</span>
+            </div>
+          </div>
+
+          <div class="article-table-wrap">
+            <table class="article-data-table">
+              <caption>Problemas já observados pelos participantes em locais que deveriam ser acessíveis</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Problema observado</th>
+                  <th scope="col">Respostas</th>
+                  <th scope="col">Percentual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Corrimão solto ou mal instalado</td><td>63</td><td>87,5%</td></tr>
+                <tr><td>Piso tátil danificado ou ausente</td><td>60</td><td>83,3%</td></tr>
+                <tr><td>Rampa muito inclinada</td><td>58</td><td>80,6%</td></tr>
+                <tr><td>Piso quebrado ou irregular</td><td>18</td><td>25,0%</td></tr>
+                <tr><td>Obstáculos no caminho</td><td>15</td><td>20,8%</td></tr>
+                <tr><td>Degraus sem sinalização</td><td>12</td><td>16,7%</td></tr>
+                <tr><td>Falta de corrimão</td><td>11</td><td>15,3%</td></tr>
+                <tr><td>Nunca observou problemas</td><td>1</td><td>1,4%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Como a questão permitia selecionar mais de uma alternativa, os percentuais não devem ser
+            somados. Eles mostram a recorrência com que cada tipo de falha foi reconhecido.
+          </p>
+          <p>
+            Outro resultado chamou atenção: <strong>97,2%</strong> responderam que esses problemas podem
+            causar acidentes. O mesmo percentual reconheceu que a falta de manutenção pode prejudicar
+            pessoas com deficiência ou mobilidade reduzida — 70,8% disseram que prejudica “um pouco” e
+            26,4%, “muito”.
+          </p>
+          <p>
+            A análise revelou ainda um contraste importante: muitos participantes reconheciam as falhas
+            no cotidiano, mas o termo <strong>engenharia diagnóstica</strong> ainda era pouco conhecido
+            em profundidade. Isso reforçou a utilidade da ação educativa.
+          </p>
+
+          <h2 id="impacto">Atividade realizada não é o mesmo que impacto comprovado</h2>
+          <p>
+            Uma das lições mais importantes da análise de projetos de extensão foi separar
+            <strong>o que fizemos</strong> daquilo que conseguimos <strong>evidenciar como resultado</strong>.
+          </p>
+          <p>
+            As atividades foram a pesquisa, os registros, o questionário, a produção do folder, do site
+            e da apresentação. Os resultados imediatos foram as 72 respostas coletadas, o mapeamento das
+            falhas mais reconhecidas e a produção de recursos que tornaram o assunto mais compreensível.
+          </p>
+          <p>
+            Os dados indicam forte reconhecimento dos riscos associados à falta de manutenção e às falhas
+            de acessibilidade. Entretanto, eles não comprovam, sozinhos, uma mudança de comportamento a
+            longo prazo nem a correção física dos problemas. Para avaliar esses impactos, seriam necessários
+            acompanhamento posterior, comparação antes e depois da ação e diálogo com os responsáveis pela
+            manutenção dos espaços.
+          </p>
+
+          <h2 id="aprendizados">O que essa experiência acrescentou à minha formação</h2>
+          <p>
+            O projeto aproximou conceitos da Engenharia Civil de problemas que muitas vezes são vistos,
+            mas não analisados. Entre os principais aprendizados que levo estão:
+          </p>
+          <ul>
+            <li><strong>Observar antes de propor:</strong> uma solução adequada depende de reconhecer corretamente o problema, seu contexto e suas possíveis causas.</li>
+            <li><strong>Comunicar também é fazer engenharia:</strong> normas e critérios técnicos precisam ser traduzidos com clareza para diferentes públicos.</li>
+            <li><strong>Trabalhar com dados exige cuidado:</strong> números ajudam a sustentar conclusões, mas precisam ser interpretados dentro dos limites do método.</li>
+            <li><strong>A manutenção faz parte da acessibilidade:</strong> não basta projetar corretamente; é necessário conservar os elementos.</li>
+            <li><strong>Engenharia tem responsabilidade social:</strong> decisões sobre o ambiente construído afetam autonomia, segurança e participação.</li>
+          </ul>
+          <p>
+            Também aprendi sobre colaboração. Cada etapa — pesquisar, organizar dados, criar materiais,
+            construir o site e apresentar — dependia da integração entre os membros da equipe. O resultado
+            não foi apenas um produto acadêmico, mas um exercício de responsabilidade compartilhada.
+          </p>
+
+          <h2 id="proximos-passos">Próximos caminhos</h2>
+          <p>
+            O projeto pode continuar com questionários antes e depois das ações educativas, ampliação da
+            diversidade do público, criação de checklists simplificados para comunidades escolares e
+            acompanhamento dos encaminhamentos de manutenção.
+          </p>
+          <p>
+            O site permanece como registro público e material de consulta. Nele, qualquer pessoa pode
+            conhecer a metodologia, explorar os principais tipos de falha e acessar uma mensagem que
+            resume o propósito de todo o trabalho:
+          </p>
+          <blockquote>Um espaço acessível é um espaço para todos.</blockquote>
+          <p>
+            Mais do que corrigir problemas depois que eles aparecem, a engenharia diagnóstica ajuda a
+            prevenir riscos. Quando aplicada à acessibilidade, ela reforça algo essencial: construir e
+            manter espaços seguros é uma forma concreta de promover inclusão.
+          </p>
+
+          <div class="project-credits">
+            <span class="article-card__label">Créditos do projeto</span>
+            <dl>
+              <div><dt>Equipe</dt><dd>Bernardo Lopes, Emily Suelen, Guilherme Menezes, Gustavo Fanuchi e Luis Fernando</dd></div>
+              <div><dt>Orientação</dt><dd>Prof.ª Sônia de Oliveira Barbosa Andrade</dd></div>
+              <div><dt>Instituições</dt><dd>Universidade FUMEC e SENAI Nova Lima</dd></div>
+              <div><dt>Componente</dt><dd>Formação de Extensão — Dimensão da Comunicação e Expressão</dd></div>
+              <div><dt>Data da ação</dt><dd>28 de maio de 2026</dd></div>
+            </dl>
+          </div>
+
+          <h2 id="referencias">Referências técnicas</h2>
+          <ul>
+            <li>ABNT NBR 9050: Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos. Rio de Janeiro: ABNT, 2020.</li>
+            <li>ABNT NBR 15575: Edificações habitacionais — Desempenho. Rio de Janeiro: ABNT, 2013.</li>
+            <li>ABNT NBR 16747: Inspeção predial — Diretrizes, conceitos, terminologia e procedimento. Rio de Janeiro: ABNT, 2020.</li>
+            <li>HELENE, Paulo R. L. <em>Manual para reparo, reforço e proteção de estruturas de concreto.</em> 2. ed. São Paulo: Pini, 1992.</li>
+            <li>THOMAZ, Ercio. <em>Trincas em edifícios: causas, prevenção e recuperação.</em> São Paulo: Pini; IPT; EPUSP, 1989.</li>
+            <li>TRIPP, David. <em>Pesquisa-ação: uma introdução metodológica.</em> Educação e Pesquisa, v. 31, n. 3, 2005.</li>
+          </ul>
+
+          <h2 id="faq">Perguntas frequentes</h2>
+          <div class="article-faq">
+            <details>
+              <summary>O que é engenharia diagnóstica?</summary>
+              <p>
+                É a área que investiga as condições de edificações e sistemas construtivos para identificar
+                falhas, manifestações patológicas, possíveis causas e medidas corretivas ou preventivas.
+              </p>
+            </details>
+            <details>
+              <summary>Quais elementos de acessibilidade foram estudados?</summary>
+              <p>
+                O projeto abordou rampas, pisos, piso tátil, corrimãos, escadas, sinalização e rotas de
+                circulação, considerando problemas construtivos, de instalação e de manutenção.
+              </p>
+            </details>
+            <details>
+              <summary>Qual foi o principal resultado do questionário?</summary>
+              <p>
+                Entre as 72 respostas, os problemas mais reconhecidos foram corrimãos soltos ou mal instalados,
+                pisos táteis danificados ou ausentes e rampas muito inclinadas. Além disso, 97,2% reconheceram
+                o risco de acidentes.
+              </p>
+            </details>
+            <details>
+              <summary>O projeto realizou uma inspeção profissional?</summary>
+              <p>
+                Não. A atividade teve finalidade acadêmica e educativa. Não substitui inspeção, laudo ou
+                avaliação formal realizada por profissional legalmente habilitado.
+              </p>
+            </details>
+          </div>
+
+          <div class="article-note">
+            <p>
+              Conheça também o <a href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">site completo do projeto</a>
+              ou volte à <a href="../">página de artigos</a> para acompanhar as próximas publicações.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="../../assets/images/logo.png" alt="Logo GMP" />
+        <p>© <span id="year"></span> Guilherme Menezes Pereira. Todos os direitos reservados.</p>
+      </div>
+      <a href="../" class="footer__top" aria-label="Voltar para artigos">← Voltar aos artigos</a>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+</html>
