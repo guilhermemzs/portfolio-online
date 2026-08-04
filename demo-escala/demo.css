@@ -57,6 +57,30 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
 
 .demo-banner a:hover { text-decoration: underline; }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  margin-left: 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+}
+
+.language-switcher a {
+  min-width: 28px;
+  margin: 0;
+  padding: 3px 6px;
+  border-radius: 999px;
+  color: #d1d5db;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.language-switcher a:hover { text-decoration: none; color: #fff; }
+.language-switcher a.is-active { background: #e3c563; color: #0b1f3a; }
+
 /* ---------- Marca Help school ---------- */
 .brand-help {
   font-family: Georgia, serif;
@@ -521,6 +545,8 @@ tr.is-cancelled { opacity: 0.4; }
   .sidebar.is-open { transform: translateX(0); }
   .sidebar__close { display: block; }
   .topbar__burger { display: block; }
-  .demo-banner { font-size: 11px; }
+  .demo-banner { font-size: 11px; justify-content: space-between; }
+  .demo-banner__description { display: none; }
+  .demo-banner a { margin-left: 0; }
   .content { padding: 1rem; }
 }

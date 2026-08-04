@@ -170,6 +170,39 @@ ul {
   gap: 0.6rem;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.language-switcher a {
+  min-width: 30px;
+  padding: 0.3rem 0.42rem;
+  border-radius: 999px;
+  color: var(--text-soft);
+  font-family: "Sora", "Inter", sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-align: center;
+  transition: color var(--transition), background var(--transition);
+}
+
+.language-switcher a:hover {
+  color: var(--text);
+}
+
+.language-switcher a.is-active {
+  background: var(--gold);
+  color: var(--navy);
+}
+
 /* Botão de tema */
 .theme-toggle {
   width: 40px;

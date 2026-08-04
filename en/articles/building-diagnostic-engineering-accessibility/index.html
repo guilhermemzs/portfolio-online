@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building diagnostics and accessibility | Guilherme Menezes</title>
+  <meta name="description" content="Learn about the FUMEC extension project that brought together building diagnostics, accessibility, and awareness at SENAI Nova Lima." />
+  <meta name="author" content="Guilherme Menezes Pereira" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://guilhermemenezespereira.com/en/articles/building-diagnostic-engineering-accessibility/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/artigos/engenharia-diagnostica-acessibilidade/" />
+  <link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/articles/building-diagnostic-engineering-accessibility/" />
+  <link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/artigos/engenharia-diagnostica-acessibilidade/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:site_name" content="Guilherme Menezes Pereira Portfolio" />
+  <meta property="og:title" content="Building diagnostics and accessibility: lessons from an extension project" />
+  <meta property="og:description" content="Research, technical standards, 72 responses, and an educational initiative at SENAI Nova Lima." />
+  <meta property="og:url" content="https://guilhermemenezespereira.com/en/articles/building-diagnostic-engineering-accessibility/" />
+  <meta property="og:image" content="https://guilhermemenezespereira.com/assets/articles/images/engenharia-diagnostica-hero.jpg" />
+  <meta property="og:image:alt" content="Presentation of the building diagnostics and accessibility project at SENAI Nova Lima" />
+  <meta property="article:published_time" content="2026-07-27" />
+  <meta property="article:modified_time" content="2026-07-27" />
+  <meta property="article:author" content="Guilherme Menezes Pereira" />
+  <meta property="article:section" content="Civil Engineering" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Building diagnostics and accessibility" />
+  <meta name="twitter:description" content="What I learned from a FUMEC extension project carried out at SENAI Nova Lima." />
+  <meta name="twitter:image" content="https://guilhermemenezespereira.com/assets/articles/images/engenharia-diagnostica-hero.jpg" />
+  <meta name="twitter:image:alt" content="Presentation of the building diagnostics and accessibility project at SENAI Nova Lima" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#07192c" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://guilhermemenezespereira.com/en/articles/building-diagnostic-engineering-accessibility/#article",
+    "url": "https://guilhermemenezespereira.com/en/articles/building-diagnostic-engineering-accessibility/",
+    "mainEntityOfPage": "https://guilhermemenezespereira.com/en/articles/building-diagnostic-engineering-accessibility/",
+    "headline": "Building diagnostics and accessibility: lessons from an extension project at SENAI Nova Lima",
+    "image": "https://guilhermemenezespereira.com/assets/articles/images/engenharia-diagnostica-hero.jpg",
+    "author": {
+      "@type": "Person",
+      "@id": "https://guilhermemenezespereira.com/#guilherme-menezes-pereira",
+      "name": "Guilherme Menezes Pereira",
+      "url": "https://guilhermemenezespereira.com/en/"
+    },
+    "datePublished": "2026-07-27",
+    "dateModified": "2026-07-27",
+    "inLanguage": "en",
+    "articleSection": "Civil Engineering",
+    "description": "An account of the FUMEC University extension project on building diagnostics applied to accessibility, presented at SENAI Nova Lima.",
+    "keywords": [
+      "building diagnostics",
+      "accessibility",
+      "university extension",
+      "building inspection",
+      "SENAI Nova Lima"
+    ],
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Building diagnostics"
+      },
+      {
+        "@type": "Thing",
+        "name": "Accessibility"
+      }
+    ],
+    "mentions": [
+      {
+        "@type": "Organization",
+        "name": "Universidade FUMEC"
+      },
+      {
+        "@type": "Organization",
+        "name": "SENAI Nova Lima"
+      }
+    ],
+    "publisher": {
+      "@type": "Person",
+      "@id": "https://guilhermemenezespereira.com/#guilherme-menezes-pereira",
+      "name": "Guilherme Menezes Pereira"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container">
+      <a href="/en/#inicio" class="navbar__brand">
+        <img src="/assets/images/logo.png" alt="GMP - Guilherme Menezes Pereira" />
+      </a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="/en/#inicio">Home</a></li>
+        <li><a href="/en/#sobre">About</a></li>
+        <li><a href="/en/#experiencia">Experience</a></li>
+        <li><a href="/en/#formacao">Education</a></li>
+        <li><a href="/en/certificates/">Certificates</a></li>
+        <li><a href="/en/#projetos">Projects</a></li>
+        <li><a class="is-active" href="/en/articles/">Articles</a></li>
+        <li><a href="/en/#habilidades">Skills</a></li>
+        <li><a href="/en/#contato">Contact</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero">
+      <div class="container article-hero__grid">
+        <div class="article-hero__content reveal">
+          <a class="article-kicker" href="/en/articles/">Articles · Civil Engineering</a>
+          <div class="article-meta">
+            <span>By Guilherme Menezes Pereira</span>
+            <span><time datetime="2026-07-27">July 27, 2026</time></span>
+            <span>10 min read</span>
+          </div>
+          <h1>Building diagnostics and accessibility: lessons from an extension project</h1>
+          <p class="article-hero__lead">
+            How research, technical standards, and 72 responses became an experience focused on
+            safety, autonomy, and inclusion at SENAI Nova Lima.
+          </p>
+          <div class="article-actions">
+            <a class="btn btn--primary" href="#artigo">Read article</a>
+            <a class="btn btn--outline" href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">View project website</a>
+          </div>
+        </div>
+
+        <aside class="article-hero__panel reveal reveal--delay-1" aria-label="Highlighted results">
+          <span class="article-kicker">The project in numbers</span>
+          <ul class="blog-stats">
+            <li><strong>72</strong><span>questionnaire responses</span></li>
+            <li><strong>97.2%</strong><span>recognize the risk of accidents</span></li>
+            <li><strong>May 28, 2026</strong><span>seminar at SENAI Nova Lima</span></li>
+          </ul>
+          <div class="certificate-mini">
+            <strong>FUMEC + SENAI Nova Lima</strong>
+            <span>University extension · Civil Engineering</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="artigo">
+      <div class="container article-layout">
+        <aside class="article-toc reveal" aria-label="Article navigation">
+          <div class="article-toc__card">
+            <h2>In this article</h2>
+            <ol>
+              <li><a href="#introducao">Introduction</a></li>
+              <li><a href="#diagnostico">Diagnostic perspective</a></li>
+              <li><a href="#acessibilidade">Accessibility</a></li>
+              <li><a href="#metodologia">Methodology</a></li>
+              <li><a href="#seminario">Seminar</a></li>
+              <li><a href="#resultados">Results</a></li>
+              <li><a href="#impacto">Activity and impact</a></li>
+              <li><a href="#aprendizados">Lessons learned</a></li>
+              <li><a href="#proximos-passos">Next steps</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ol>
+          </div>
+
+          <div class="article-toc__card">
+            <h3>Full project</h3>
+            <div class="article-downloads">
+              <a href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">Visit the project website</a>
+            </div>
+          </div>
+        </aside>
+
+        <article class="article-content">
+          <h2 id="introducao">Introduction</h2>
+          <p>
+            A ramp may exist and still be unsafe. Tactile paving may be installed and still be interrupted
+            by obstacles. A handrail may look adequate at first glance while being loose, deteriorated,
+            or poorly positioned.
+          </p>
+          <p>
+            Starting from this difference between simply existing and actually working, we developed
+            the <strong>Building Diagnostics and Accessibility</strong> extension project in the Civil
+            Engineering program at FUMEC University. The goal was to connect technical knowledge with
+            everyday reality and show how inspection, diagnosis, and preventive maintenance contribute
+            to safer, more accessible, and inclusive environments.
+          </p>
+          <p>
+            The work combined a literature review, study of technical standards, observation of accessibility
+            features, production of educational material, a questionnaire, and an awareness initiative at
+            SENAI Nova Lima. For me, it was also an opportunity to realize, even in the early semesters of
+            my degree, that engineering begins before a solution is calculated: it begins with the ability
+            to observe, interpret, and communicate a problem responsibly.
+          </p>
+
+          <h2 id="diagnostico">Building diagnostics beyond repairs</h2>
+          <p>
+            Building diagnostics investigates the condition of a building or its systems to identify
+            defects and signs of deterioration, understand possible causes, and guide corrective or
+            preventive measures. In practical terms, it helps answer four questions:
+          </p>
+          <ol>
+            <li>What is happening?</li>
+            <li>Why might the problem have occurred?</li>
+            <li>What risk is associated with it?</li>
+            <li>What type of technical action should be considered?</li>
+          </ol>
+          <p>
+            In the project, we organized this logic around four areas: <strong>technical inspection,
+            identification of defects, cause analysis, and technical guidance</strong>. This approach
+            avoids focusing only on visible signs. A crack, an uneven surface, or an unstable handrail
+            is not merely an aesthetic imperfection; it may indicate failures in design, construction,
+            use, or maintenance and directly affect the safety of people using the space.
+          </p>
+          <blockquote>
+            Identifying failures, understanding causes, and guiding solutions: this was the principle behind the project.
+          </blockquote>
+
+          <h2 id="acessibilidade">Why place accessibility at the center?</h2>
+          <p>
+            Accessibility is not limited to the presence of a ramp or a sign. It depends on the
+            integrated functioning of routes, flooring, slopes, handrails, stairs, signage, and
+            circulation areas.
+          </p>
+          <p>
+            Our assessment therefore covered both construction-related issues such as cracks, wear,
+            water infiltration, and uneven surfaces, as well as failures in installation, signage,
+            and maintenance. The examples we studied included:
+          </p>
+          <ul>
+            <li>ramps with inadequate slopes, cracks, or uneven surfaces;</li>
+            <li>broken, irregular, or slippery floors;</li>
+            <li>missing, damaged, discontinuous, or obstructed tactile paving;</li>
+            <li>loose, deteriorated, missing, or improperly installed handrails;</li>
+            <li>steps without signage;</li>
+            <li>obstacles along routes that should remain clear.</li>
+          </ul>
+          <p>
+            These situations can reduce autonomy and increase the risk of accidents, especially for
+            people with disabilities, older adults, pregnant people, and people with reduced mobility.
+            Accessibility is not an afterthought in construction: it is a condition for safety,
+            dignity, and appropriate use of space.
+          </p>
+
+          <h2 id="metodologia">From research to action</h2>
+          <p>
+            We adopted an <strong>action research</strong> approach, combining technical study and
+            educational activity. The process was organized into seven stages:
+          </p>
+          <ol>
+            <li>a literature review on building diagnostics, defects, and accessibility;</li>
+            <li>study of ABNT NBR 9050, NBR 16747, and NBR 15575;</li>
+            <li>observation and photographic documentation of more than eight accessibility features;</li>
+            <li>classification of issues by type, urgency, and impact on use;</li>
+            <li>creation of a brochure, presentation, and digital resources in accessible language;</li>
+            <li>administration of an online questionnaire;</li>
+            <li>presentation of results to the school community.</li>
+          </ol>
+          <p>
+            The standards provided a basis for turning observations into criteria. ABNT NBR 9050
+            guided the assessment of accessibility features; NBR 16747 contributed building inspection
+            principles; and NBR 15575 broadened the discussion of building performance.
+          </p>
+
+          <div class="article-stats-grid" aria-label="Methodology summary">
+            <div class="article-stat">
+              <strong>8+</strong>
+              <span>accessibility features analyzed</span>
+            </div>
+            <div class="article-stat">
+              <strong>3</strong>
+              <span>reference technical standards</span>
+            </div>
+            <div class="article-stat">
+              <strong>2026</strong>
+              <span>year the project was conducted</span>
+            </div>
+          </div>
+
+          <div class="article-note">
+            <p>
+              <strong>Educational scope:</strong> we did not produce a professional report or a compliance
+              certification. The purpose was to practice technical assessment of the built environment and
+              communicate that knowledge to the school community.
+            </p>
+          </div>
+
+          <p>
+            More than compiling references, we needed to turn technical content into communication.
+            The brochure summarized the concepts and benefits of early identification. The presentation
+            organized the reasoning visually, while the
+            <a href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">project website</a>
+            expanded access with explanations, methodology, a checklist, a gallery, and references.
+          </p>
+
+          <h2 id="seminario">Meeting the students at SENAI Nova Lima</h2>
+          <p>
+            The project concluded on <strong>May 28, 2026</strong>, with a Results Seminar at SENAI
+            Nova Lima. The team consisted of Bernardo Lopes, Emily Suelen, Guilherme Menezes,
+            Gustavo Fanuchi, and Luis Fernando, under the guidance of Professor Sônia de Oliveira
+            Barbosa Andrade.
+          </p>
+          <p>
+            During the presentation, we explained how to recognize issues in ramps, flooring,
+            handrails, stairs, and signage; discussed possible causes; and showed why periodic
+            inspections and maintenance matter. The goal was not to create specialists in a single
+            conversation, but to provide references so that problems often treated as normal could
+            instead be recognized as matters of safety and inclusion.
+          </p>
+          <p>
+            The experience also required an essential skill for any engineer: adapting language to
+            the audience without losing precision. Connecting concepts to visible everyday situations
+            transformed an academic assignment into a real communication experience.
+          </p>
+
+          <div class="article-gallery article-gallery--project" aria-label="Project records at SENAI Nova Lima">
+            <figure>
+              <img src="/assets/articles/images/engenharia-diagnostica-hero.jpg" alt="Team presenting the building diagnostics project to SENAI Nova Lima students" width="1200" height="630" loading="lazy" />
+              <figcaption>Results Seminar held at SENAI Nova Lima on May 28, 2026.</figcaption>
+            </figure>
+            <figure>
+              <img src="/assets/articles/images/engenharia-diagnostica-guilherme.jpg" alt="Guilherme Menezes explaining the main areas of building diagnostics during the presentation" width="750" height="1000" loading="lazy" />
+              <figcaption>Presentation of the four areas: inspection, diagnosis, cause analysis, and technical guidance.</figcaption>
+            </figure>
+            <figure>
+              <img src="/assets/articles/images/engenharia-diagnostica-equipe.jpg" alt="Team members presenting a slide about safer environments" width="1000" height="750" loading="lazy" />
+              <figcaption>Awareness about prevention, safety, inclusion, and education.</figcaption>
+            </figure>
+            <figure>
+              <img src="/assets/articles/images/engenharia-diagnostica-senai.jpg" alt="Guilherme and team members in front of the SENAI Nova Lima sign" width="590" height="330" loading="lazy" />
+              <figcaption>The team after the extension initiative at SENAI Nova Lima.</figcaption>
+            </figure>
+          </div>
+
+          <h2 id="resultados">What 72 responses revealed</h2>
+          <p>
+            The online questionnaire received <strong>72 responses</strong>. Among participants, 81.9%
+            were enrolled in technical education, 9.7% in higher education, and 8.4% in other programs.
+          </p>
+
+          <div class="article-stats-grid" aria-label="Main questionnaire results">
+            <div class="article-stat">
+              <strong>87.5%</strong>
+              <span>had seen a loose or poorly installed handrail</span>
+            </div>
+            <div class="article-stat">
+              <strong>83.3%</strong>
+              <span>had seen damaged or missing tactile paving</span>
+            </div>
+            <div class="article-stat">
+              <strong>80.6%</strong>
+              <span>had seen excessively steep ramps</span>
+            </div>
+          </div>
+
+          <div class="article-table-wrap">
+            <table class="article-data-table">
+              <caption>Problems participants had observed in places that should be accessible</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Observed problem</th>
+                  <th scope="col">Responses</th>
+                  <th scope="col">Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Loose or poorly installed handrail</td><td>63</td><td>87.5%</td></tr>
+                <tr><td>Damaged or missing tactile paving</td><td>60</td><td>83.3%</td></tr>
+                <tr><td>Excessively steep ramp</td><td>58</td><td>80.6%</td></tr>
+                <tr><td>Broken or uneven flooring</td><td>18</td><td>25.0%</td></tr>
+                <tr><td>Obstacles along the route</td><td>15</td><td>20.8%</td></tr>
+                <tr><td>Steps without signage</td><td>12</td><td>16.7%</td></tr>
+                <tr><td>Missing handrail</td><td>11</td><td>15.3%</td></tr>
+                <tr><td>Had never observed problems</td><td>1</td><td>1.4%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Because the question allowed participants to select more than one option, the percentages
+            should not be added together. They indicate how often each type of issue was recognized.
+          </p>
+          <p>
+            Another result stood out: <strong>97.2%</strong> responded that these problems can cause
+            accidents. The same percentage recognized that insufficient maintenance can harm people
+            with disabilities or reduced mobility: 70.8% said it causes “some” harm and 26.4% “a lot.”
+          </p>
+          <p>
+            The analysis also revealed an important contrast: many participants recognized these issues
+            in daily life, but had little in-depth familiarity with the term <strong>building diagnostics</strong>.
+            This reinforced the value of the educational initiative.
+          </p>
+
+          <h2 id="impacto">Completed activities are not the same as proven impact</h2>
+          <p>
+            One of the most important lessons from analyzing extension projects was learning to separate
+            <strong>what we did</strong> from what we could <strong>demonstrate as a result</strong>.
+          </p>
+          <p>
+            The activities included research, records, the questionnaire, and production of the brochure,
+            website, and presentation. The immediate results were the 72 responses collected, the mapping
+            of the most commonly recognized issues, and resources that made the subject easier to understand.
+          </p>
+          <p>
+            The data indicate strong recognition of the risks associated with insufficient maintenance and
+            accessibility failures. However, by themselves they do not prove long-term behavioral change or
+            physical correction of the problems. Evaluating those impacts would require follow-up, comparison
+            before and after the initiative, and dialogue with those responsible for maintaining the spaces.
+          </p>
+
+          <h2 id="aprendizados">What this experience added to my education</h2>
+          <p>
+            The project connected Civil Engineering concepts with problems that are often seen but not
+            analyzed. The main lessons I take from it include:
+          </p>
+          <ul>
+            <li><strong>Observe before proposing:</strong> an appropriate solution depends on correctly identifying the problem, its context, and possible causes.</li>
+            <li><strong>Communication is also engineering:</strong> technical standards and criteria must be explained clearly to different audiences.</li>
+            <li><strong>Working with data requires care:</strong> numbers help support conclusions, but must be interpreted within the method's limitations.</li>
+            <li><strong>Maintenance is part of accessibility:</strong> correct design is not enough; features must also be preserved.</li>
+            <li><strong>Engineering has a social responsibility:</strong> decisions about the built environment affect autonomy, safety, and participation.</li>
+          </ul>
+          <p>
+            I also learned about collaboration. Every stage, from researching and organizing data to
+            creating materials, building the website, and presenting, depended on the team working together.
+            The result was not only an academic product, but an exercise in shared responsibility.
+          </p>
+
+          <h2 id="proximos-passos">Next steps</h2>
+          <p>
+            The project could continue with questionnaires before and after educational initiatives,
+            a more diverse audience, simplified checklists for school communities, and follow-up on
+            maintenance referrals.
+          </p>
+          <p>
+            The website remains available as a public record and reference resource. Anyone can learn
+            about the methodology, explore the main types of issues, and find a message that summarizes
+            the purpose of the entire project:
+          </p>
+          <blockquote>An accessible space is a space for everyone.</blockquote>
+          <p>
+            More than correcting problems after they appear, building diagnostics helps prevent risks.
+            When applied to accessibility, it reinforces something essential: building and maintaining
+            safe spaces is a concrete way to promote inclusion.
+          </p>
+
+          <div class="project-credits">
+            <span class="article-card__label">Project credits</span>
+            <dl>
+              <div><dt>Team</dt><dd>Bernardo Lopes, Emily Suelen, Guilherme Menezes, Gustavo Fanuchi, and Luis Fernando</dd></div>
+              <div><dt>Advisor</dt><dd>Professor Sônia de Oliveira Barbosa Andrade</dd></div>
+              <div><dt>Institutions</dt><dd>FUMEC University and SENAI Nova Lima</dd></div>
+              <div><dt>Course component</dt><dd>Extension Education - Communication and Expression</dd></div>
+              <div><dt>Date</dt><dd>May 28, 2026</dd></div>
+            </dl>
+          </div>
+
+          <h2 id="referencias">Technical references</h2>
+          <ul>
+            <li>ABNT NBR 9050: Accessibility to buildings, furniture, spaces and urban equipment. Rio de Janeiro: ABNT, 2020.</li>
+            <li>ABNT NBR 15575: Residential buildings - Performance. Rio de Janeiro: ABNT, 2013.</li>
+            <li>ABNT NBR 16747: Building inspection - Guidelines, concepts, terminology and procedure. Rio de Janeiro: ABNT, 2020.</li>
+            <li>HELENE, Paulo R. L. <em>Manual for the repair, strengthening and protection of concrete structures.</em> 2nd ed. São Paulo: Pini, 1992.</li>
+            <li>THOMAZ, Ercio. <em>Cracks in buildings: causes, prevention and recovery.</em> São Paulo: Pini; IPT; EPUSP, 1989.</li>
+            <li>TRIPP, David. <em>Action research: a methodological introduction.</em> Educação e Pesquisa, vol. 31, no. 3, 2005.</li>
+          </ul>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          <div class="article-faq">
+            <details>
+              <summary>What is building diagnostics?</summary>
+              <p>
+                It is the field that investigates the condition of buildings and construction systems to
+                identify failures, signs of deterioration, possible causes, and corrective or preventive measures.
+              </p>
+            </details>
+            <details>
+              <summary>Which accessibility features were studied?</summary>
+              <p>
+                The project covered ramps, flooring, tactile paving, handrails, stairs, signage, and
+                circulation routes, considering construction, installation, and maintenance problems.
+              </p>
+            </details>
+            <details>
+              <summary>What was the main questionnaire result?</summary>
+              <p>
+                Among the 72 responses, the most commonly recognized problems were loose or poorly installed
+                handrails, damaged or missing tactile paving, and excessively steep ramps. In addition, 97.2%
+                recognized the risk of accidents.
+              </p>
+            </details>
+            <details>
+              <summary>Did the project conduct a professional inspection?</summary>
+              <p>
+                No. The activity had academic and educational purposes. It does not replace an inspection,
+                technical report, or formal assessment performed by a legally qualified professional.
+              </p>
+            </details>
+          </div>
+
+          <div class="article-note">
+            <p>
+              You can also visit the <a href="https://guilhermemzs.github.io/fumec/" target="_blank" rel="noopener">full project website</a>
+              or return to the <a href="/en/articles/">articles page</a> to follow future posts.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="/assets/images/logo.png" alt="GMP logo" />
+        <p>© <span id="year"></span> Guilherme Menezes Pereira. All rights reserved.</p>
+      </div>
+      <a href="/en/articles/" class="footer__top" aria-label="Back to articles">← Back to articles</a>
+    </div>
+  </footer>
+
+  <script src="/js/language.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>

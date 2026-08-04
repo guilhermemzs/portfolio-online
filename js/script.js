@@ -8,8 +8,10 @@
    LINKS SOCIAIS — edite apenas as URLs abaixo.
    Para o WhatsApp, use o formato: https://wa.me/55DDDNUMERO
 ------------------------------------------------------------ */
+const SITE_IS_ENGLISH = document.documentElement.lang.toLowerCase().startsWith("en");
+
 const SOCIAL_LINKS = {
-  linkedin: "https://www.linkedin.com/in/guilherme-menezess/?locale=pt-BR",
+  linkedin: `https://www.linkedin.com/in/guilherme-menezess/?locale=${SITE_IS_ENGLISH ? "en_US" : "pt-BR"}`,
   github: "https://github.com/guilhermemzs",
   whatsapp: "https://wa.me/5531998402007",
 };
@@ -29,10 +31,10 @@ const formatDuration = (totalMonths) => {
   const months = totalMonths % 12;
   const parts = [];
 
-  if (years) parts.push(`${years} ${years === 1 ? "ano" : "anos"}`);
-  if (months) parts.push(`${months} ${months === 1 ? "mês" : "meses"}`);
+  if (years) parts.push(`${years} ${SITE_IS_ENGLISH ? (years === 1 ? "year" : "years") : (years === 1 ? "ano" : "anos")}`);
+  if (months) parts.push(`${months} ${SITE_IS_ENGLISH ? (months === 1 ? "month" : "months") : (months === 1 ? "mês" : "meses")}`);
 
-  return parts.join(" e ");
+  return parts.join(SITE_IS_ENGLISH ? " and " : " e ");
 };
 
 document.querySelectorAll("[data-duration-start]").forEach((el) => {
@@ -151,17 +153,23 @@ if (form && formHint) {
     const mensagem = form.mensagem.value.trim();
 
     if (!nome || !email || !mensagem) {
-      formHint.textContent = "Por favor, preencha todos os campos.";
+      formHint.textContent = SITE_IS_ENGLISH
+        ? "Please complete all fields."
+        : "Por favor, preencha todos os campos.";
       return;
     }
 
-    const assunto = encodeURIComponent(`Contato pelo portfólio — ${nome}`);
+    const assunto = encodeURIComponent(
+      SITE_IS_ENGLISH ? `Portfolio contact — ${nome}` : `Contato pelo portfólio — ${nome}`
+    );
     const corpo = encodeURIComponent(
-      `Nome: ${nome}\nE-mail: ${email}\n\n${mensagem}`
+      `${SITE_IS_ENGLISH ? "Name" : "Nome"}: ${nome}\nEmail: ${email}\n\n${mensagem}`
     );
 
     window.location.href = `mailto:guilhermemp903@gmail.com?subject=${assunto}&body=${corpo}`;
-    formHint.textContent = "Abrindo seu aplicativo de e-mail...";
+    formHint.textContent = SITE_IS_ENGLISH
+      ? "Opening your email application..."
+      : "Abrindo seu aplicativo de e-mail...";
     form.reset();
   });
 }
