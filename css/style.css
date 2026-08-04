@@ -1561,11 +1561,29 @@ ul {
   font-size: 0.94rem;
 }
 
+.credential-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.credential-card__skills li {
+  padding: 0.32rem 0.58rem;
+  border: 1px solid color-mix(in srgb, var(--blue) 24%, var(--line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--blue) 7%, var(--surface));
+  color: var(--text-soft);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 .credential-card__facts {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.7rem;
-  margin: 1.15rem 0;
+  margin: 1rem 0;
 }
 
 .credential-card__facts li {
@@ -1592,6 +1610,30 @@ ul {
   font-size: 0.75rem;
 }
 
+.credential-card__body > .credential-card__id {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.8rem;
+  border-left: 3px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  background: color-mix(in srgb, var(--gold) 6%, transparent);
+  font-size: 0.72rem;
+}
+
+.credential-card__id span {
+  color: var(--text-soft);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.credential-card__id code {
+  color: var(--text);
+  font-size: 0.68rem;
+  overflow-wrap: anywhere;
+}
+
 .credential-card__actions {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1601,6 +1643,18 @@ ul {
 
 .credential-card__actions .btn {
   padding-inline: 1rem;
+}
+
+.credential-card__actions--verified .btn--verify {
+  grid-column: 1 / -1;
+  border-color: color-mix(in srgb, var(--gold) 75%, var(--line));
+  background: color-mix(in srgb, var(--gold) 9%, var(--surface));
+  color: var(--text);
+}
+
+.credential-card__actions--verified .btn--verify:hover {
+  border-color: var(--gold);
+  background: color-mix(in srgb, var(--gold) 17%, var(--surface));
 }
 
 .credentials-note {
