@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/" />
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/" />
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -24,7 +24,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/artigos/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/articles/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/artigos/" />
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -33,7 +33,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/artigos/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/articles/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/artigos/" />
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -106,6 +106,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/articles/cambridge-c1-advanced/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/artigos/cambridge-c1-advanced/" />
     <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://guilhermemenezespereira.com/artigos/segundo-periodo-engenharia-civil/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/artigos/segundo-periodo-engenharia-civil/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/articles/second-semester-civil-engineering/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/artigos/segundo-periodo-engenharia-civil/" />
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://guilhermemenezespereira.com/en/articles/second-semester-civil-engineering/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/artigos/segundo-periodo-engenharia-civil/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/articles/second-semester-civil-engineering/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/artigos/segundo-periodo-engenharia-civil/" />
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

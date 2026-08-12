@@ -26,6 +26,14 @@ const LANGUAGE_ROUTES = {
     pt: "/artigos/cambridge-c1-advanced/",
     en: "/en/articles/cambridge-c1-advanced/",
   },
+  "/artigos/segundo-periodo-engenharia-civil/": {
+    pt: "/artigos/segundo-periodo-engenharia-civil/",
+    en: "/en/articles/second-semester-civil-engineering/",
+  },
+  "/en/articles/second-semester-civil-engineering/": {
+    pt: "/artigos/segundo-periodo-engenharia-civil/",
+    en: "/en/articles/second-semester-civil-engineering/",
+  },
   "/artigos/engenharia-diagnostica-acessibilidade/": {
     pt: "/artigos/engenharia-diagnostica-acessibilidade/",
     en: "/en/articles/building-diagnostic-engineering-accessibility/",
