@@ -877,6 +877,14 @@ ul {
   margin-bottom: 1.2rem;
 }
 
+.card__demo-preview {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 1.4rem;
+}
+
 .card__gallery img {
   width: 100%;
   aspect-ratio: 4 / 3;
