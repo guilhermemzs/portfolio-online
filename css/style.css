@@ -879,10 +879,32 @@ ul {
 
 .card__demo-preview {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
   border: 1px solid var(--line);
   border-radius: 12px;
   margin-bottom: 1.4rem;
+}
+
+/* Projetos têm alturas variadas; colunas balanceadas evitam que um card
+   force a altura dos demais sem alterar o grid usado em outras seções. */
+.projects-grid {
+  display: block;
+  columns: 2;
+  column-gap: 1.6rem;
+}
+
+.projects-grid > .card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.6rem;
+  break-inside: avoid;
+  vertical-align: top;
+}
+
+.projects-grid .card--featured {
+  grid-row: auto;
 }
 
 .card__gallery img {
@@ -2338,6 +2360,14 @@ ul {
 
   .credential-card__actions {
     grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    columns: 1;
+  }
+
+  .projects-grid > .card {
+    margin-bottom: 1rem;
   }
 
   .badge-card {
