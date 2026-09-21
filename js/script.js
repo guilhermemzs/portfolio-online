@@ -114,6 +114,64 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
 /* ------------------------------------------------------------
+   CARROSSEL DA VISITA TÉCNICA
+   Exibe uma foto por vez para manter o card compacto.
+------------------------------------------------------------ */
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+  const slides = [...carousel.querySelectorAll(".site-visit__slide")];
+  const dots = [...carousel.querySelectorAll("[data-carousel-dot]")];
+  const currentLabel = carousel.querySelector("[data-carousel-current]");
+  const previousButton = carousel.querySelector("[data-carousel-prev]");
+  const nextButton = carousel.querySelector("[data-carousel-next]");
+  let current = 0;
+  let touchStartX = null;
+
+  const showSlide = (index) => {
+    current = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, slideIndex) => {
+      const active = slideIndex === current;
+      slide.classList.toggle("is-active", active);
+      slide.setAttribute("aria-hidden", String(!active));
+    });
+
+    dots.forEach((dot, dotIndex) => {
+      const active = dotIndex === current;
+      dot.classList.toggle("is-active", active);
+      dot.toggleAttribute("aria-current", active);
+    });
+
+    if (currentLabel) currentLabel.textContent = String(current + 1);
+  };
+
+  previousButton?.addEventListener("click", () => showSlide(current - 1));
+  nextButton?.addEventListener("click", () => showSlide(current + 1));
+  dots.forEach((dot, index) => dot.addEventListener("click", () => showSlide(index)));
+
+  carousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      showSlide(current - 1);
+    }
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      showSlide(current + 1);
+    }
+  });
+
+  carousel.addEventListener("touchstart", (event) => {
+    touchStartX = event.changedTouches[0].clientX;
+  }, { passive: true });
+
+  carousel.addEventListener("touchend", (event) => {
+    if (touchStartX === null) return;
+    const distance = event.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(distance) > 48) showSlide(current + (distance < 0 ? 1 : -1));
+    touchStartX = null;
+  }, { passive: true });
+});
+
+/* ------------------------------------------------------------
    DESTAQUE DO LINK ATIVO NO MENU conforme a seção visível
 ------------------------------------------------------------ */
 const sections = document.querySelectorAll("main section[id]");
