@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/" />
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-11-06T11:18:15.948Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -24,7 +24,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://guilhermemenezespereira.com/artigos/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://guilhermemenezespereira.com/en/articles/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guilhermemenezespereira.com/artigos/" />
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-11-06T11:18:15.948Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -127,4 +127,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/iniciacao-cientifica-protocolo-colaboracao-internacional/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/ingles-tecnico-engenharia-comunicacao-precisa/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/extensao-escuta-social-problema-tecnico/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/planejamento-incerteza-caminho-critico-restricoes/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/ia-generativa-engenharia-verificacao-rastreabilidade/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/processos-sistemas-internos-confiaveis/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/controle-tecnologico-misturas-asfalticas/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/bim-gestao-informacao-interoperabilidade/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://guilhermemenezespereira.com/artigos/materiais-carbono-ciclo-de-vida/</loc><lastmod>2026-11-06T11:18:15.948Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

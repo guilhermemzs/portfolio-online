@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BIM e gestão da informação | Guilherme Menezes | Guilherme Menezes</title>
+<meta name="description" content="Entenda BIM além do 3D: requisitos de informação, ambiente comum de dados, IFC, responsabilidades e verificação das entregas de engenharia." />
+<meta name="author" content="Guilherme Menezes Pereira" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="editorial-date" content="2026-09-13" />
+<link rel="canonical" href="https://guilhermemenezespereira.com/artigos/bim-gestao-informacao-interoperabilidade/" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Portfólio de Guilherme Menezes Pereira" />
+<meta property="og:title" content="BIM além do modelo 3D: como organizar informações que sustentam decisões" />
+<meta property="og:description" content="Requisitos, responsabilidades, versões e interoperabilidade explicam por que a transformação digital da engenharia depende de mais que software." />
+<meta property="og:url" content="https://guilhermemenezespereira.com/artigos/bim-gestao-informacao-interoperabilidade/" />
+<meta property="og:image" content="https://guilhermemenezespereira.com/assets/articles/images/bim-gestao-informacao-interoperabilidade.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="BIM: informação que pode ser usada" />
+<meta property="article:published_time" content="2026-11-06T11:18:15.948Z" />
+<meta property="article:modified_time" content="2026-11-06T11:18:15.948Z" />
+<meta property="article:section" content="Engenharia Civil · Tecnologia" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BIM além do modelo 3D: como organizar informações que sustentam decisões" />
+<meta name="twitter:description" content="Requisitos, responsabilidades, versões e interoperabilidade explicam por que a transformação digital da engenharia depende de mais que software." />
+<meta name="twitter:image" content="https://guilhermemenezespereira.com/assets/articles/images/bim-gestao-informacao-interoperabilidade.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#07192c" />
+  <link rel="stylesheet" href="/css/style.css" />
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "https://guilhermemenezespereira.com/artigos/bim-gestao-informacao-interoperabilidade/#article",
+  "url": "https://guilhermemenezespereira.com/artigos/bim-gestao-informacao-interoperabilidade/",
+  "mainEntityOfPage": "https://guilhermemenezespereira.com/artigos/bim-gestao-informacao-interoperabilidade/",
+  "headline": "BIM além do modelo 3D: como organizar informações que sustentam decisões",
+  "description": "Entenda BIM além do 3D: requisitos de informação, ambiente comum de dados, IFC, responsabilidades e verificação das entregas de engenharia.",
+  "image": "https://guilhermemenezespereira.com/assets/articles/images/bim-gestao-informacao-interoperabilidade.png",
+  "author": {
+    "@type": "Person",
+    "name": "Guilherme Menezes Pereira",
+    "url": "https://guilhermemenezespereira.com/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Guilherme Menezes Pereira"
+  },
+  "datePublished": "2026-11-06T11:18:15.948Z",
+  "dateModified": "2026-11-06T11:18:15.948Z",
+  "temporalCoverage": "2026-09-13",
+  "inLanguage": "pt-BR",
+  "articleSection": "Engenharia Civil · Tecnologia",
+  "keywords": [
+    "BIM",
+    "Gestão da informação",
+    "Transformação digital"
+  ],
+  "wordCount": 1523,
+  "timeRequired": "PT8M",
+  "citation": [
+    "https://www.iso.org/standard/68078.html",
+    "https://openlibrary-repo.ecampusontario.ca/jspui/handle/123456789/768",
+    "https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-A_The-information-management-function-and-resources_Edition-2.pdf",
+    "https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-C_Facilitating-the-common-data-environment-workflow-and-technical-solutions_Edition-1.pdf",
+    "https://www.iso.org/standard/84123.html"
+  ]
+}</script>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container">
+      <a href="/#inicio" class="navbar__brand">
+        <img src="/assets/images/logo.png" alt="GMP — Guilherme Menezes Pereira" />
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="/#inicio">Início</a></li>
+        <li><a href="/#sobre">Sobre</a></li>
+        <li><a href="/#experiencia">Experiência</a></li>
+        <li><a href="/#formacao">Formação</a></li>
+        <li><a href="/certificados/">Certificados</a></li>
+        <li><a href="/#projetos">Projetos</a></li>
+        <li><a class="is-active" href="/artigos/">Artigos</a></li>
+        <li><a href="/#habilidades">Habilidades</a></li>
+        <li><a href="/#contato">Contato</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro/escuro" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+<main>
+<section class="article-hero"><div class="container article-hero__grid"><div class="article-hero__content reveal"><a class="article-kicker" href="/artigos/">Artigos · Engenharia Civil · Tecnologia</a><div class="article-meta"><span>Por Guilherme Menezes Pereira</span><span>Referência editorial: <time datetime="2026-09-13">13 de setembro de 2026</time></span><span>8 min de leitura</span><span>Publicado em <time datetime="2026-11-06T11:18:15.948Z">6 de novembro de 2026</time></span></div><h1>BIM além do modelo 3D: como organizar informações que sustentam decisões</h1><p class="article-hero__lead">Requisitos, responsabilidades, versões e interoperabilidade explicam por que a transformação digital da engenharia depende de mais que software.</p><div class="article-actions"><a class="btn btn--primary" href="#artigo">Ler artigo</a><a class="btn btn--outline" href="#referencias">Consultar fontes</a></div></div><aside class="article-hero__panel reveal reveal--delay-1" aria-label="Destaques do artigo"><span class="article-kicker">Engenharia digital</span><ul class="blog-stats"><li><strong>Requisitos</strong><span>definir o que é necessário</span></li><li><strong>Versões</strong><span>saber o que pode ser usado</span></li><li><strong>IFC</strong><span>planejar e testar a troca</span></li></ul><div class="certificate-mini"><strong>Informação certa, decisão verificável</strong><span>Estudos, aplicações e pensamento crítico</span></div></aside></div></section>
+<section class="section" id="artigo"><div class="container article-layout"><aside class="article-toc reveal" aria-label="Navegação do artigo"><div class="article-toc__card"><h2>Neste artigo</h2><ol><li><a href="#o-modelo-bonito-e-a-pergunta-que-permanece">O modelo bonito e a pergunta que permanece</a></li><li><a href="#comecar-pela-decisao-que-precisa-ser-tomada">Começar pela decisão que precisa ser tomada</a></li><li><a href="#planejamento-bim-e-planejamento-do-trabalho">Planejamento BIM é planejamento do trabalho</a></li><li><a href="#responsabilidade-nao-se-resolve-com-uma-pasta-compartilhada">Responsabilidade não se resolve com uma pasta compartilhada</a></li><li><a href="#o-ambiente-comum-de-dados-tambem-e-um-fluxo">O ambiente comum de dados também é um fluxo</a></li><li><a href="#interoperabilidade-precisa-ser-demonstrada">Interoperabilidade precisa ser demonstrada</a></li><li><a href="#conferir-a-informacao-com-perguntas-concretas">Conferir a informação com perguntas concretas</a></li><li><a href="#uma-competencia-que-conecta-engenharia-e-sistemas">Uma competência que conecta engenharia e sistemas</a></li><li><a href="#referencias">Referências</a></li></ol></div></aside><article class="article-content"><div class="article-note"><p><strong>Sobre as datas:</strong> este artigo integra a edição de <time datetime="2026-09-13">13 de setembro de 2026</time> do calendário editorial e foi publicado em <time datetime="2026-11-06T11:18:15.948Z">6 de novembro de 2026</time>. A pesquisa foi realizada para esta publicação, com fontes e versões anteriores à data editorial.</p></div><figure class="article-cover"><img src="/assets/articles/images/bim-gestao-informacao-interoperabilidade.png" alt="Requisitos → Modelo → Verificação → Entrega. O modelo conecta decisões, responsabilidades e evidências verificáveis." width="1200" height="630" loading="lazy" /><figcaption>Diagrama conceitual: O modelo conecta decisões, responsabilidades e evidências verificáveis.</figcaption></figure>
+<h2 id="o-modelo-bonito-e-a-pergunta-que-permanece">O modelo bonito e a pergunta que permanece</h2>
+<p>Uma representação tridimensional torna um projeto mais fácil de visualizar. Permite explorar ambientes, reconhecer elementos e discutir interferências com pessoas que nem sempre têm familiaridade com desenhos técnicos. Essa capacidade é valiosa, mas não responde a perguntas essenciais da obra: qual versão está autorizada? Quem deve corrigir um dado? O quantitativo inclui todos os elementos previstos? A informação será útil para quem receber o empreendimento?</p>
+<p>É nesse ponto que o Building Information Modelling, ou BIM, precisa ser compreendido como uma abordagem de trabalho com informação. O modelo digital participa do processo, mas sua utilidade depende de regras, responsabilidades e critérios de verificação. Um arquivo complexo pode transportar incertezas com a mesma eficiência com que transporta geometria.</p>
+<p>A aproximação entre tecnologia e Engenharia Civil torna esse tema especialmente relevante para minha formação. Meu interesse é entender como o conhecimento técnico se transforma em informação confiável, compartilhada entre pessoas com funções diferentes. Este texto é uma análise conceitual, com exemplos hipotéticos; não apresenta a implantação de BIM em um projeto meu.</p>
+<h2 id="comecar-pela-decisao-que-precisa-ser-tomada">Começar pela decisão que precisa ser tomada</h2>
+<p>A <a href="https://www.iso.org/standard/68078.html">ISO 19650-1:2018</a> apresenta conceitos de gestão da informação que incluem organização, registro, troca e controle de versões ao longo do ciclo de vida dos ativos construídos. O alcance vai do planejamento à operação e ao fim de vida. Isso ajuda a deslocar a discussão de “qual programa usar?” para “qual informação será necessária, por quem e em que momento?”.</p>
+<p>Considere uma reforma hipotética de uma escola. Se a primeira decisão for verificar a possibilidade de reorganizar salas, a equipe precisará de dimensões, usos e restrições espaciais confiáveis. Se a decisão for contratar a manutenção de equipamentos, outras informações serão relevantes: identificação, localização, especificação, garantia e acesso para intervenção. Produzir o mesmo conjunto de dados para ambos os objetivos pode gerar esforço desnecessário e lacunas importantes.</p>
+<p>Um requisito bem formulado conecta finalidade, conteúdo e verificação. “Entregar um modelo completo” deixa ampla margem de interpretação. “Entregar a relação de equipamentos por ambiente, com identificador único e campos definidos, para revisão da equipe de manutenção” permite discutir o que deve existir e como conferir a entrega. O exemplo não é uma cláusula contratual pronta; mostra a diferença entre uma expectativa vaga e um pedido verificável.</p>
+<h2 id="planejamento-bim-e-planejamento-do-trabalho">Planejamento BIM é planejamento do trabalho</h2>
+<p>O <a href="https://openlibrary-repo.ecampusontario.ca/jspui/handle/123456789/768">BIM Project Execution Planning Guide, da Penn State, versão 2.2 de 2019, disponível no repositório eCampusOntario</a>, propõe um procedimento que relaciona usos do BIM, processos, trocas de informação e infraestrutura de apoio. O ponto central é planejar a execução de acordo com as características do projeto e as capacidades da equipe. Uma estratégia que funciona em uma organização não se transfere automaticamente para outra.</p>
+<p>No exemplo da escola, o plano poderia delimitar dois usos iniciais: coordenação espacial da reforma e organização dos dados necessários à manutenção. A partir daí, a equipe definiria os responsáveis pela produção, os momentos de revisão e os formatos de entrega. O tamanho do plano deveria ser proporcional à complexidade real do trabalho, sem sacrificar as informações essenciais.</p>
+<p>Há um teste simples para avaliar a clareza desse planejamento: diante de uma inconsistência, cada participante sabe qual providência tomar? Se a resposta depender de localizar informalmente a única pessoa que “entende o modelo”, o processo ainda apresenta uma dependência frágil.</p>
+<h2 id="responsabilidade-nao-se-resolve-com-uma-pasta-compartilhada">Responsabilidade não se resolve com uma pasta compartilhada</h2>
+<p>A orientação <a href="https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-A_The-information-management-function-and-resources_Edition-2.pdf">Guidance Part A, do UK BIM Framework, edição de fevereiro de 2021</a>, discute a distribuição das atividades de gestão da informação. A função precisa ser atribuída de maneira explícita: produzir, revisar, coordenar, autorizar e aceitar informações são tarefas que exigem responsáveis e recursos. A existência de um especialista em BIM não elimina a responsabilidade técnica das demais disciplinas.</p>
+<p>Essa distinção evita uma confusão comum em equipes de projeto. Uma pessoa pode verificar a organização de arquivos sem ter atribuição ou conhecimento para aprovar o dimensionamento de uma estrutura. Outra pode aprovar uma solução de engenharia sem administrar as permissões da plataforma. O fluxo precisa representar essas diferenças.</p>
+<p>Uma proposta prática é descrever cada entrega em uma linha: finalidade, produtor, revisor, responsável pela autorização, prazo e evidência de conclusão. Se houver dois aprovadores, convém explicar a competência de cada um. Caso contrário, o registro de duas assinaturas pode esconder a ausência de uma verificação específica.</p>
+<h2 id="o-ambiente-comum-de-dados-tambem-e-um-fluxo">O ambiente comum de dados também é um fluxo</h2>
+<p>O <a href="https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-C_Facilitating-the-common-data-environment-workflow-and-technical-solutions_Edition-1.pdf">Guidance Part C, publicado pelo UK BIM Framework em setembro de 2020</a>, apresenta o ambiente comum de dados, ou CDE, como combinação de soluções técnicas e fluxos de trabalho. Metadados, revisões e estados de uso ajudam a distinguir informações em desenvolvimento, compartilhadas para coordenação, publicadas para uma finalidade e arquivadas.</p>
+<p>Isso significa que ter acesso a um arquivo não equivale a poder utilizá-lo para qualquer decisão. A equipe precisa reconhecer o propósito e a situação daquela informação. O fluxo também deve preservar os registros necessários para reconstruir o caminho de uma alteração.</p>
+<p>Voltemos à reforma fictícia. Uma abertura de parede muda de posição durante o desenvolvimento. Se o orçamento usar uma versão e a equipe de execução consultar outra, a divergência pode chegar à compra ou à obra. Um procedimento coerente indicaria a revisão afetada, o motivo, quem avaliou os impactos e quando a nova informação passou a ser válida para determinada finalidade.</p>
+<p>O valor desse registro aparece justamente quando há dúvidas. Em vez de discutir qual pessoa enviou a mensagem mais recente, a equipe pode consultar um histórico identificável. O processo continua dependendo de disciplina: nenhuma plataforma torna confiável um dado que não foi conferido.</p>
+<h2 id="interoperabilidade-precisa-ser-demonstrada">Interoperabilidade precisa ser demonstrada</h2>
+<p>Trabalhar com várias disciplinas frequentemente envolve programas diferentes. O Industry Foundation Classes, ou IFC, é um padrão aberto de representação e intercâmbio de informações de ativos construídos. A <a href="https://www.iso.org/standard/84123.html">ISO 16739-1:2024, publicada em março de 2024</a>, ampliou a cobertura de informações para obras de infraestrutura, incluindo pontes, rodovias, ferrovias, hidrovias e instalações portuárias. Seu escopo contempla o compartilhamento dessas informações entre aplicações ao longo do ciclo de vida.</p>
+<p>A existência do padrão oferece uma base para a troca, mas um projeto ainda precisa combinar versão, conteúdo esperado e condições de uso. Exportar e importar um arquivo sem mensagem de erro não comprova que todos os dados necessários chegaram corretamente.</p>
+<p>Um teste hipotético pode selecionar dez elementos representativos e conferir sua identificação, geometria, classificação e propriedades antes e depois da troca. Se uma porta continuar visível, mas perder o código usado na planilha de manutenção, a transferência poderá servir à visualização e falhar no objetivo operacional. Se uma unidade for interpretada incorretamente, o erro poderá permanecer escondido atrás de uma tela visualmente convincente.</p>
+<p>Por isso, eu começaria a avaliação por uma pequena troca de prova, antes de produzir um modelo extenso. A equipe registraria o que foi preservado, o que precisou de ajuste e quais limitações foram aceitas. Esse ensaio de informação é uma proposta de trabalho para reduzir dúvidas iniciais; não representa uma certificação de software.</p>
+<h2 id="conferir-a-informacao-com-perguntas-concretas">Conferir a informação com perguntas concretas</h2>
+<p>Uma revisão pode ser organizada em três camadas. A primeira trata da integridade: o arquivo abre, está identificado e contém o conjunto esperado? A segunda examina o significado: unidades, propriedades e classificações correspondem ao que a equipe combinou? A terceira avalia a adequação ao uso: os dados permitem tomar a decisão prevista com a segurança necessária?</p>
+<p>Essas camadas não devem ser confundidas. Uma tabela com todos os campos preenchidos pode estar tecnicamente errada. Um modelo sem interferências geométricas evidentes pode conter uma solução inadequada de acesso ou manutenção. Da mesma forma, uma entrega visualmente incompleta pode ser suficiente para uma análise preliminar bem delimitada.</p>
+<p>Um exercício acadêmico interessante seria criar uma pequena entrega, trocar o arquivo entre duas ferramentas e documentar as divergências. O relatório deveria registrar as versões utilizadas, o objetivo da troca e o procedimento de conferência. O mérito estaria em explicar o resultado, inclusive suas limitações, e não em demonstrar domínio superficial de muitas funções.</p>
+<h2 id="uma-competencia-que-conecta-engenharia-e-sistemas">Uma competência que conecta engenharia e sistemas</h2>
+<p>O estudo de BIM revela uma proximidade com o desenvolvimento de sistemas: nomes precisam ter significado consistente, versões precisam ser rastreáveis e usuários precisam compreender o que podem fazer com os dados. Essa proximidade não transforma o engenheiro em programador obrigatório, mas abre espaço para colaboração técnica mais qualificada.</p>
+<p>Na prática, a maturidade digital aparece quando a equipe consegue responder o que sabe, de onde veio a informação e para qual decisão ela é adequada. Aprender a modelar é parte desse caminho. Aprender a especificar, verificar e comunicar a informação é o que permite transformar o modelo em uma ferramenta efetiva de engenharia.</p>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li>ISO. <a href="https://www.iso.org/standard/68078.html">ISO 19650-1:2018 — Information management using building information modelling: Concepts and principles</a>. 2018.</li>
+<li>Messner, J. et al. <a href="https://openlibrary-repo.ecampusontario.ca/jspui/handle/123456789/768">BIM Project Execution Planning Guide — Version 2.2</a>. Penn State, 2019. Cópia disponibilizada pelo repositório eCampusOntario.</li>
+<li>UK BIM Framework. <a href="https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-A_The-information-management-function-and-resources_Edition-2.pdf">Guidance Part A: The information management function and resources</a>. 2ª edição, fevereiro de 2021.</li>
+<li>UK BIM Framework. <a href="https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-C_Facilitating-the-common-data-environment-workflow-and-technical-solutions_Edition-1.pdf">Guidance Part C: Facilitating the common data environment</a>. Setembro de 2020.</li>
+<li>ISO. <a href="https://www.iso.org/standard/84123.html">ISO 16739-1:2024 — Industry Foundation Classes (IFC) for data sharing in the construction and facility management industries: Data schema</a>. Março de 2024.</li>
+</ul>
+
+<div class="article-note"><p>Explore outros temas na <a href="/artigos/">biblioteca de artigos</a> e conheça a <a href="/#formacao">formação acadêmica do autor</a>.</p></div></article></div></section>
+</main>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="/assets/images/logo.png" alt="Logo GMP" />
+        <p>© <span id="year"></span> Guilherme Menezes Pereira. Todos os direitos reservados.</p>
+      </div>
+      <a href="/artigos/" class="footer__top" aria-label="Voltar para artigos">← Voltar aos artigos</a>
+    </div>
+  </footer>
+
+  <script src="/js/language.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+{
+  "publishedAt": "2026-11-06T11:18:15.948Z",
+  "timezone": "America/Sao_Paulo",
+  "readingWordsPerMinute": 210,
+  "articles": [
+    {
+      "editorialDate": "2026-09-06",
+      "title": "Construção sustentável: como comparar materiais pelo carbono de ciclo de vida",
+      "description": "Um método para transformar promessas ambientais em decisões de projeto, considerando função, durabilidade, transporte e qualidade dos dados.",
+      "category": "Engenharia Civil · Sustentabilidade",
+      "slug": "materiais-carbono-ciclo-de-vida",
+      "seoTitle": "Materiais e carbono de ciclo de vida | Guilherme Menezes",
+      "seoDescription": "Como comparar materiais de construção pelo ciclo de vida, interpretar dados ambientais e avaliar desempenho, durabilidade e incertezas.",
+      "tags": [
+        "Construção sustentável",
+        "Materiais",
+        "Ciclo de vida"
+      ],
+      "hero": {
+        "eyebrow": "Decisões de projeto",
+        "headline": "Desempenho, impacto e evidência",
+        "items": [
+          {
+            "value": "Função",
+            "label": "comparar soluções equivalentes"
+          },
+          {
+            "value": "Ciclo de vida",
+            "label": "observar todas as etapas"
+          },
+          {
+            "value": "Dados",
+            "label": "explicitar fontes e limites"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "ISO 14040:2006 — Principles and framework",
+          "url": "https://www.iso.org/standard/37456.html",
+          "year": "2006"
+        },
+        {
+          "title": "RICS — Whole life carbon assessment, 2nd edition, version 3",
+          "url": "https://www.rics.org/content/dam/ricsglobal/documents/standards/Whole_life_carbon_assessment_PS_Sept23.pdf",
+          "year": "2023/2024"
+        },
+        {
+          "title": "UNEP — Building Materials and the Climate",
+          "url": "https://wedocs.unep.org/handle/20.500.11822/43293",
+          "year": "2023"
+        },
+        {
+          "title": "EPA — Criteria for Product Category Rules, Version 1",
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P101BDR2.txt",
+          "year": "2024"
+        }
+      ],
+      "readingMinutes": 8,
+      "wordCount": 1489,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/materiais-carbono-ciclo-de-vida/",
+      "coverPath": "/assets/articles/images/materiais-carbono-ciclo-de-vida.png"
+    },
+    {
+      "editorialDate": "2026-09-13",
+      "title": "BIM além do modelo 3D: como organizar informações que sustentam decisões",
+      "description": "Requisitos, responsabilidades, versões e interoperabilidade explicam por que a transformação digital da engenharia depende de mais que software.",
+      "category": "Engenharia Civil · Tecnologia",
+      "slug": "bim-gestao-informacao-interoperabilidade",
+      "seoTitle": "BIM e gestão da informação | Guilherme Menezes",
+      "seoDescription": "Entenda BIM além do 3D: requisitos de informação, ambiente comum de dados, IFC, responsabilidades e verificação das entregas de engenharia.",
+      "tags": [
+        "BIM",
+        "Gestão da informação",
+        "Transformação digital"
+      ],
+      "hero": {
+        "eyebrow": "Engenharia digital",
+        "headline": "Informação certa, decisão verificável",
+        "items": [
+          {
+            "value": "Requisitos",
+            "label": "definir o que é necessário"
+          },
+          {
+            "value": "Versões",
+            "label": "saber o que pode ser usado"
+          },
+          {
+            "value": "IFC",
+            "label": "planejar e testar a troca"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "ISO 19650-1:2018 — Concepts and principles",
+          "url": "https://www.iso.org/standard/68078.html",
+          "year": "2018"
+        },
+        {
+          "title": "Penn State — BIM Project Execution Planning Guide, Version 2.2 (repositório eCampusOntario)",
+          "url": "https://openlibrary-repo.ecampusontario.ca/jspui/handle/123456789/768",
+          "year": "2019"
+        },
+        {
+          "title": "UK BIM Framework — Guidance Part A, edition 2",
+          "url": "https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-A_The-information-management-function-and-resources_Edition-2.pdf",
+          "year": "2021"
+        },
+        {
+          "title": "UK BIM Framework — Guidance Part C, edition 1",
+          "url": "https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-C_Facilitating-the-common-data-environment-workflow-and-technical-solutions_Edition-1.pdf",
+          "year": "2020"
+        },
+        {
+          "title": "ISO 16739-1:2024 — Industry Foundation Classes (IFC), Data schema",
+          "url": "https://www.iso.org/standard/84123.html",
+          "year": "2024"
+        }
+      ],
+      "readingMinutes": 8,
+      "wordCount": 1523,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/bim-gestao-informacao-interoperabilidade/",
+      "coverPath": "/assets/articles/images/bim-gestao-informacao-interoperabilidade.png"
+    },
+    {
+      "editorialDate": "2026-09-20",
+      "title": "Da usina à pista: o que o controle tecnológico revela sobre uma mistura asfáltica",
+      "description": "Materiais, amostragem, execução e rastreabilidade ajudam a transformar uma visita técnica em perguntas relevantes para a formação em engenharia.",
+      "category": "Engenharia Civil · Pavimentação",
+      "slug": "controle-tecnologico-misturas-asfalticas",
+      "seoTitle": "Controle de misturas asfálticas | Guilherme Menezes",
+      "seoDescription": "Da usina à pista: entenda materiais, controle tecnológico, compactação e rastreabilidade, com um roteiro crítico para visitas técnicas.",
+      "tags": [
+        "Pavimentação",
+        "Controle tecnológico",
+        "Visita técnica"
+      ],
+      "hero": {
+        "eyebrow": "Pavimentação e formação",
+        "headline": "Ligar o ensaio à decisão",
+        "items": [
+          {
+            "value": "Materiais",
+            "label": "compreender a mistura"
+          },
+          {
+            "value": "Processo",
+            "label": "acompanhar a execução"
+          },
+          {
+            "value": "Evidência",
+            "label": "registrar o que foi verificado"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Bernucci et al. — Pavimentação asfáltica, 2ª edição",
+          "url": "https://www.gov.br/antt/pt-br/assuntos/rodovias/recursos-para-desenvolvimento-tecnologico-rdt/projetos-rdt/transbrasiliana/finalizado/livro-pavimentacao-asfaltica-2013-formacao-basica-para-engenheiros-2013-2deg-edicao.pdf",
+          "year": "2022"
+        },
+        {
+          "title": "DNIT 031/2024-ES — versão corrigida em 27/11/2025",
+          "url": "https://www.gov.br/dnit/pt-br/assuntos/planejamento-e-pesquisa/ipr/coletanea-de-normas/coletanea-de-normas/especificacao-de-servico-es/dnit_031_2024_es_com_incorporacao_da_errata-1.pdf",
+          "year": "2024/2025"
+        },
+        {
+          "title": "NCHRP Synthesis 537 — Impact of Asphalt Thickness on Pavement Quality",
+          "url": "https://doi.org/10.17226/25498",
+          "year": "2019"
+        },
+        {
+          "title": "FHWA — Construction Quality Assurance for Design-Build Projects",
+          "url": "https://www.fhwa.dot.gov/publications/focus/12aug/12aug03.cfm",
+          "year": "2012"
+        },
+        {
+          "title": "Portfólio — registro da visita de 19/09/2026",
+          "url": "https://guilhermemenezespereira.com/#projetos",
+          "year": "2026"
+        }
+      ],
+      "readingMinutes": 8,
+      "wordCount": 1554,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/controle-tecnologico-misturas-asfalticas/",
+      "coverPath": "/assets/articles/images/controle-tecnologico-misturas-asfalticas.png"
+    },
+    {
+      "editorialDate": "2026-09-27",
+      "title": "Do processo ao sistema: como transformar rotinas internas em software confiável",
+      "description": "Requisitos, organização dos dados, validações e adoção: o trabalho que conecta uma necessidade operacional a uma ferramenta realmente útil.",
+      "category": "Tecnologia · Desenvolvimento de sistemas",
+      "slug": "processos-sistemas-internos-confiaveis",
+      "seoTitle": "Sistemas internos: requisitos, dados e adoção | Guilherme Menezes",
+      "seoDescription": "Como desenvolver sistemas internos confiáveis: mapear processos, definir requisitos, proteger dados, testar regras e acompanhar a adoção pelos usuários.",
+      "tags": [
+        "Sistemas internos",
+        "Transformação digital",
+        "Gestão de processos"
+      ],
+      "hero": {
+        "eyebrow": "Tecnologia aplicada",
+        "headline": "Uma boa ferramenta começa com uma boa pergunta sobre o trabalho.",
+        "items": [
+          {
+            "value": "Processo",
+            "label": "entender antes de automatizar"
+          },
+          {
+            "value": "Dados",
+            "label": "registrar com significado"
+          },
+          {
+            "value": "Uso",
+            "label": "validar na rotina"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "NASA. Systems Engineering Handbook, NASA/SP-2016-6105 Rev. 2",
+          "url": "https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf",
+          "year": 2016
+        },
+        {
+          "title": "NIST. Secure Software Development Framework, SP 800-218, versão 1.1",
+          "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+          "year": 2022
+        },
+        {
+          "title": "NIST. Privacy Framework, versão 1.0",
+          "url": "https://csrc.nist.gov/pubs/cswp/10/nist-privacy-framework-version-10/final",
+          "year": 2020
+        },
+        {
+          "title": "W3C. Web Content Accessibility Guidelines 2.2, Recomendação de 5 de outubro de 2023",
+          "url": "https://www.w3.org/TR/2023/REC-WCAG22-20231005/",
+          "year": 2023
+        }
+      ],
+      "readingMinutes": 8,
+      "wordCount": 1558,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/processos-sistemas-internos-confiaveis/",
+      "coverPath": "/assets/articles/images/processos-sistemas-internos-confiaveis.png"
+    },
+    {
+      "editorialDate": "2026-10-04",
+      "title": "IA generativa na engenharia: da resposta convincente à informação verificável",
+      "description": "Como usar modelos de linguagem em estudos e rotinas técnicas com critérios de evidência, rastreabilidade e responsabilidade.",
+      "category": "Inteligência artificial · Engenharia",
+      "slug": "ia-generativa-engenharia-verificacao-rastreabilidade",
+      "seoTitle": "IA na engenharia: verificação e rastreabilidade | Guilherme Menezes",
+      "seoDescription": "Um método para usar IA generativa na engenharia: delimitar tarefas, verificar fontes e cálculos, proteger dados e documentar decisões e limitações.",
+      "tags": [
+        "Inteligência artificial",
+        "Engenharia Civil",
+        "Pensamento crítico"
+      ],
+      "hero": {
+        "eyebrow": "IA com critério",
+        "headline": "Uma resposta útil precisa sobreviver à verificação.",
+        "items": [
+          {
+            "value": "Contexto",
+            "label": "definir a tarefa"
+          },
+          {
+            "value": "Evidência",
+            "label": "conferir a origem"
+          },
+          {
+            "value": "Revisão",
+            "label": "assumir a decisão"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "NIST. Artificial Intelligence Risk Management Framework, AI RMF 1.0",
+          "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+          "year": 2023
+        },
+        {
+          "title": "NIST. Generative Artificial Intelligence Profile, NIST AI 600-1",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+          "year": 2024
+        },
+        {
+          "title": "Liu et al. Lost in the Middle: How Language Models Use Long Contexts. TACL, 12, 157–173",
+          "url": "https://aclanthology.org/2024.tacl-1.9/",
+          "year": 2024
+        },
+        {
+          "title": "UNESCO. Guidance for generative AI in education and research",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+          "year": 2023
+        }
+      ],
+      "readingMinutes": 8,
+      "wordCount": 1604,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/ia-generativa-engenharia-verificacao-rastreabilidade/",
+      "coverPath": "/assets/articles/images/ia-generativa-engenharia-verificacao-rastreabilidade.png"
+    },
+    {
+      "editorialDate": "2026-10-11",
+      "title": "Planejar sob incerteza: caminho crítico, restrições e compromissos confiáveis",
+      "description": "Como conectar o cronograma às condições reais de execução e usar desvios como informação para melhorar o planejamento.",
+      "category": "Gestão · Planejamento de projetos",
+      "slug": "planejamento-incerteza-caminho-critico-restricoes",
+      "seoTitle": "Planejamento sob incerteza e caminho crítico | Guilherme Menezes",
+      "seoDescription": "Caminho crítico, análise de restrições e PPC: entenda como construir planos executáveis e acompanhar compromissos em projetos de engenharia.",
+      "tags": [
+        "Planejamento",
+        "Gestão de projetos",
+        "Lean Construction"
+      ],
+      "hero": {
+        "eyebrow": "Planejamento e operação",
+        "headline": "Uma data precisa de condições para se tornar um compromisso.",
+        "items": [
+          {
+            "value": "Sequência",
+            "label": "entender dependências"
+          },
+          {
+            "value": "Condições",
+            "label": "remover restrições"
+          },
+          {
+            "value": "Aprendizado",
+            "label": "analisar os desvios"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "GAO. Schedule Assessment Guide: Best Practices for Project Schedules, GAO-16-89G",
+          "url": "https://www.gao.gov/products/gao-16-89g",
+          "year": 2015
+        },
+        {
+          "title": "Hulett, D. T. Schedule Risk Analysis Simplified. PM Network, 10(7), 25–32",
+          "url": "https://www.pmi.org/learning/library/schedule-risk-analysis-simplified-10742",
+          "year": 1996
+        },
+        {
+          "title": "Ballard, H. G. The Last Planner System of Production Control. Tese, University of Birmingham",
+          "url": "https://leanconstruction.org/wp-content/uploads/2022/09/the-last-planner-system-of-production-control-ballard2000-dissertation.pdf",
+          "year": 2000
+        },
+        {
+          "title": "Ballard, G. Improving Work Flow Reliability. IGLC 7, p. 275–286",
+          "url": "https://www.iglc.net/papers/details/62",
+          "year": 1999
+        }
+      ],
+      "readingMinutes": 8,
+      "wordCount": 1652,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/planejamento-incerteza-caminho-critico-restricoes/",
+      "coverPath": "/assets/articles/images/planejamento-incerteza-caminho-critico-restricoes.png"
+    },
+    {
+      "editorialDate": "2026-10-18",
+      "title": "Da escuta ao problema técnico: o que a extensão ensina à Engenharia Civil",
+      "description": "Como transformar demandas da comunidade em perguntas investigáveis, sem confundir percepção, evidência e diagnóstico profissional.",
+      "category": "Engenharia Civil · Extensão",
+      "slug": "extensao-escuta-social-problema-tecnico",
+      "seoTitle": "Extensão e escuta social na Engenharia Civil | Guilherme Menezes",
+      "seoDescription": "Um método para ouvir comunidades, delimitar problemas de engenharia, registrar evidências e devolver resultados com responsabilidade na extensão universitária.",
+      "tags": [
+        "Extensão",
+        "Engenharia Civil",
+        "Responsabilidade social"
+      ],
+      "hero": {
+        "eyebrow": "Formação e sociedade",
+        "headline": "Um problema bem definido começa com escuta e termina com uma devolutiva compreensível.",
+        "items": [
+          {
+            "value": "Escuta",
+            "label": "entender necessidades"
+          },
+          {
+            "value": "Evidência",
+            "label": "delimitar conclusões"
+          },
+          {
+            "value": "Devolutiva",
+            "label": "compartilhar resultados"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "CNE/CES. Resolução nº 7, de 18 de dezembro de 2018",
+          "url": "https://ufal.br/ufal/extensao/documentos/documentos-diversos/diretrizes_nacionais_extensao_rces007_18.pdf/view",
+          "year": 2018
+        },
+        {
+          "title": "FORPROEX. Política Nacional de Extensão Universitária",
+          "url": "https://www.ufmg.br/proex/documentos/politica-nacional-de-extensao-universitaria-pneu/",
+          "year": 2012
+        },
+        {
+          "title": "UN-Habitat. Public Space Site-Specific Assessment",
+          "url": "https://unhabitat.org/public-space-site-specific-assessment-guidelines-to-achieve-quality-public-spaces-at-neighbourhood",
+          "year": 2020
+        },
+        {
+          "title": "UNESCO. Recommendation on Open Science",
+          "url": "https://www.unesco.org/en/legal-affairs/recommendation-open-science",
+          "year": 2021
+        }
+      ],
+      "wordCount": 1492,
+      "readingMinutes": 8,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/extensao-escuta-social-problema-tecnico/",
+      "coverPath": "/assets/articles/images/extensao-escuta-social-problema-tecnico.png"
+    },
+    {
+      "editorialDate": "2026-10-25",
+      "title": "Inglês técnico na engenharia: comunicar decisões sem perder precisão",
+      "description": "Leitura crítica, unidades, termos e confirmação de entendimento: competências para transformar o inglês em uma ferramenta de trabalho confiável.",
+      "category": "Inglês · Comunicação profissional",
+      "slug": "ingles-tecnico-engenharia-comunicacao-precisa",
+      "seoTitle": "Inglês técnico na engenharia: precisão | Guilherme Menezes",
+      "seoDescription": "Como ler fontes, escrever mensagens e revisar unidades em inglês técnico para engenharia, com exemplos de comunicação precisa e confirmação de entendimento.",
+      "tags": [
+        "Inglês técnico",
+        "Engenharia",
+        "Comunicação"
+      ],
+      "hero": {
+        "eyebrow": "Idioma como ferramenta profissional",
+        "headline": "Comunicar bem é preservar o significado até a decisão de quem recebe.",
+        "items": [
+          {
+            "value": "Ler",
+            "label": "examinar a evidência"
+          },
+          {
+            "value": "Escrever",
+            "label": "explicitar a decisão"
+          },
+          {
+            "value": "Confirmar",
+            "label": "verificar o entendimento"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Council of Europe. CEFR Companion Volume — Mediation",
+          "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/mediation",
+          "year": 2020
+        },
+        {
+          "title": "NASA. Systems Engineering Handbook, Rev. 2, Appendix C",
+          "url": "https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf",
+          "year": 2016
+        },
+        {
+          "title": "NIST. Guide for the Use of the International System of Units, SP 811",
+          "url": "https://www.nist.gov/publications/guide-use-international-system-units-si?pub_id=200349",
+          "year": 2008
+        },
+        {
+          "title": "EASE. Guidelines for Authors and Translators of Scientific Articles to be Published in English",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4130677/",
+          "year": 2014
+        },
+        {
+          "title": "NASA/JPL. Mars Climate Orbiter Team Finds Likely Cause of Loss",
+          "url": "https://www.jpl.nasa.gov/news/mars-climate-orbiter-team-finds-likely-cause-of-loss/",
+          "year": 1999
+        }
+      ],
+      "wordCount": 1506,
+      "readingMinutes": 8,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/ingles-tecnico-engenharia-comunicacao-precisa/",
+      "coverPath": "/assets/articles/images/ingles-tecnico-engenharia-comunicacao-precisa.png"
+    },
+    {
+      "editorialDate": "2026-11-01",
+      "title": "Da dúvida ao protocolo: começar na pesquisa e construir colaboração internacional",
+      "description": "Perguntas delimitadas, dados rastreáveis e contribuições claras como base para a iniciação científica e a internacionalização acadêmica.",
+      "category": "Pesquisa · Internacionalização",
+      "slug": "iniciacao-cientifica-protocolo-colaboracao-internacional",
+      "seoTitle": "Iniciação científica e colaboração internacional | Guilherme Menezes",
+      "seoDescription": "Como transformar uma dúvida em protocolo de pesquisa, organizar dados reproduzíveis e preparar uma colaboração internacional responsável na graduação.",
+      "tags": [
+        "Pesquisa científica",
+        "Ciência aberta",
+        "Internacionalização"
+      ],
+      "hero": {
+        "eyebrow": "Investigar com método",
+        "headline": "Uma pergunta delimitada e um processo verificável tornam a colaboração possível.",
+        "items": [
+          {
+            "value": "Pergunta",
+            "label": "definir o que investigar"
+          },
+          {
+            "value": "Protocolo",
+            "label": "registrar como investigar"
+          },
+          {
+            "value": "Colaboração",
+            "label": "tornar contribuições claras"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "CNPq. Programa Institucional de Bolsas de Iniciação Científica — PIBIC",
+          "url": "https://www.gov.br/cnpq/pt-br/acesso-a-informacao/acoes-e-programas/programas/programas-ict/pibic",
+          "year": 2026
+        },
+        {
+          "title": "National Academies. Reproducibility and Replicability in Science",
+          "url": "https://www.nationalacademies.org/read/25303/chapter/3",
+          "year": 2019
+        },
+        {
+          "title": "Wilkinson et al. The FAIR Guiding Principles for scientific data management and stewardship",
+          "url": "https://www.nature.com/articles/sdata201618",
+          "year": 2016
+        },
+        {
+          "title": "UNESCO. Recommendation on Open Science",
+          "url": "https://www.unesco.org/en/legal-affairs/recommendation-open-science",
+          "year": 2021
+        },
+        {
+          "title": "NISO. CRediT — Contributor Roles Taxonomy",
+          "url": "https://www.niso.org/standards-committees/credit",
+          "year": 2022
+        },
+        {
+          "title": "World Conferences on Research Integrity. Singapore Statement on Research Integrity",
+          "url": "https://www.wcrif.org/downloads/main-website/singapore-statements/223-singpore-statement-a4size/file",
+          "year": 2010
+        }
+      ],
+      "wordCount": 1550,
+      "readingMinutes": 8,
+      "publishedAt": "2026-11-06T11:18:15.948Z",
+      "url": "https://guilhermemenezespereira.com/artigos/iniciacao-cientifica-protocolo-colaboracao-internacional/",
+      "coverPath": "/assets/articles/images/iniciacao-cientifica-protocolo-colaboracao-internacional.png"
+    }
+  ]
+}
