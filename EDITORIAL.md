@@ -7,7 +7,7 @@ O portfólio é estático (HTML, CSS e JavaScript), sem CMS ou etapa de build. A
 - Uma nova edição por domingo. Conferir o catálogo e evitar duplicidades antes de pesquisar.
 - Texto original e desenvolvido, com fontes primárias verificadas, referências e links. Escolher extensão conforme a complexidade; a primeira série tem cerca de 1.500–1.650 palavras por artigo.
 - Não inventar experiências, certificados, medições ou resultados do autor. Exemplos didáticos devem ser identificados como hipotéticos.
-- Preservar as quatro publicações anteriores e o estilo existente. Usar os componentes de artigo em `css/style.css`, com navegação, sumário, corpo, referências e rodapé.
+- Preservar as quatro publicações anteriores e o estilo existente. Usar os componentes de artigo em `css/portfolio.css`, com navegação, sumário, corpo, referências e rodapé.
 - Publicar conteúdos em português. Só anunciar uma tradução e definir `hreflang` equivalente se a página traduzida realmente existir.
 
 ## Datas e rastreabilidade
