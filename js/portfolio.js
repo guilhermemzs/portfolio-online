@@ -61,7 +61,7 @@
       const name = String(fields.get('nome')).trim();
       const address = String(fields.get('email')).trim();
       const message = String(fields.get('mensagem')).trim();
-      const subject = (english ? 'Portfolio contact — ' : 'Contato pelo portfólio — ') + name;
+      const subject = (english ? 'Portfolio message from ' : 'Contato pelo portfólio de ') + name;
       const body = (english ? 'Name: ' : 'Nome: ') + name + '\nE-mail: ' + address + '\n\n' + message;
       location.href = 'mailto:guilhermemp903@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       contact.querySelector('[role="status"]').textContent = english ? 'Opening your email app…' : 'Abrindo seu aplicativo de e-mail…';

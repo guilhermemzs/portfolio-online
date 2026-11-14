@@ -1,11 +1,11 @@
 /* ============================================================
-   PORTFÓLIO — Guilherme Menezes Pereira
+   PORTFÓLIO, Guilherme Menezes Pereira
    Funcionalidades: links sociais, tema claro/escuro, menu mobile,
    animações ao rolar, destaque do menu ativo e formulário de contato.
 ============================================================ */
 
 /* ------------------------------------------------------------
-   LINKS SOCIAIS — edite apenas as URLs abaixo.
+   LINKS SOCIAIS, edite apenas as URLs abaixo.
    Para o WhatsApp, use o formato: https://wa.me/55DDDNUMERO
 ------------------------------------------------------------ */
 const SITE_IS_ENGLISH = document.documentElement.lang.toLowerCase().startsWith("en");
@@ -67,7 +67,7 @@ if (themeToggle) {
 }
 
 /* ------------------------------------------------------------
-   NAVBAR — sombra ao rolar e menu mobile
+   NAVBAR, sombra ao rolar e menu mobile
 ------------------------------------------------------------ */
 const navbar = document.getElementById("navbar");
 const navBurger = document.getElementById("navBurger");
@@ -97,7 +97,7 @@ if (navBurger && navLinks) {
 }
 
 /* ------------------------------------------------------------
-   ANIMAÇÕES AO ROLAR — revela elementos .reveal ao entrarem na tela
+   ANIMAÇÕES AO ROLAR, revela elementos .reveal ao entrarem na tela
 ------------------------------------------------------------ */
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -218,7 +218,7 @@ if (form && formHint) {
     }
 
     const assunto = encodeURIComponent(
-      SITE_IS_ENGLISH ? `Portfolio contact — ${nome}` : `Contato pelo portfólio — ${nome}`
+      SITE_IS_ENGLISH ? `Portfolio message from ${nome}` : `Contato pelo portfólio de ${nome}`
     );
     const corpo = encodeURIComponent(
       `${SITE_IS_ENGLISH ? "Name" : "Nome"}: ${nome}\nEmail: ${email}\n\n${mensagem}`

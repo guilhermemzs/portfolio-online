@@ -30,7 +30,6 @@ h1,h2,h3 { font-weight: 500; }
 .wrap { width: min(var(--width),calc(100% - 96px)); margin-inline: auto; }
 .site-head { position: absolute; inset: 0 0 auto; z-index: 9; display: flex; align-items: center; justify-content: space-between; padding: 31px 48px; }
 .identity { font-size: 20px; line-height: 1.2; letter-spacing: -.055em; }
-.identity small { display: block; margin-top: 4px; color: var(--mute); font-size: 12px; letter-spacing: -.025em; }
 .tabs { position: fixed; z-index: 10; left: 50%; top: 28px; transform: translateX(-50%); display: flex; border: 1px solid #ffffff12; background: #292929c9; box-shadow: inset 0 1px 5px #ffffff05,0 8px 28px #0003; backdrop-filter: blur(18px); border-radius: 100px; padding: 5px; gap: 4px; }
 .tabs a { font-size: 14px; text-align: center; min-width: 80px; line-height: 36px; border-radius: 100px; position: relative; z-index: 1; }
 .tabs a:hover { background: #ffffff07; }
@@ -55,7 +54,7 @@ main { min-height: 50vh; }
 .window-bar i:nth-child(1){--dot:#f56559}.window-bar i:nth-child(2){--dot:#e9b83c}.window-bar i:nth-child(3){--dot:#5dc756}
 .window-bar b { margin-left:auto; font-size:24px; font-weight:200; color:#ffffff40; }
 .window-copy { padding: 79px 56px 192px; }
-.hero h1 { font-size: 78px; line-height: .96; letter-spacing: -.05em; text-shadow: var(--glow); }
+.hero h1 { font-size: 78px; line-height: .96; letter-spacing: -.05em; text-shadow: var(--glow); text-wrap: balance; }
 em { font-family: Gloock,Georgia,serif; font-weight:400; letter-spacing:-.055em; padding-right:.06em; background:linear-gradient(#f2f2f2 45%,#d7d6da 61%,#4c4d57 90%); background-clip:text; color:transparent; text-shadow:none; filter:drop-shadow(0 0 10px #f9dfd731); }
 .intro { width: 49%; margin: 64px 0 0 auto; font-size: 22px; line-height: 1.4; letter-spacing:-.035em; }
 .intro span { color: var(--mute); }
