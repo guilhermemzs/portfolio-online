@@ -558,6 +558,147 @@
       "publishedAt": "2026-11-06T11:18:15.948Z",
       "url": "https://guilhermemenezespereira.com/artigos/iniciacao-cientifica-protocolo-colaboracao-internacional/",
       "coverPath": "/assets/articles/images/iniciacao-cientifica-protocolo-colaboracao-internacional.png"
+    },
+    {
+      "title": "Quanto da demanda de um edifício a chuva e o reúso podem atender?",
+      "description": "Um balanço de seis dias mostra como consumo, armazenamento e qualidade da água orientam a escolha entre conservar, captar chuva e tratar águas cinzas.",
+      "category": "Engenharia Civil · Recursos hídricos",
+      "slug": "agua-em-edificacoes-conservacao-e-reuso",
+      "editorialDate": "2026-11-08",
+      "seoTitle": "Água em edificações e limites do reúso | Guilherme Menezes",
+      "seoDescription": "Como medir a demanda de água, comparar chuva e águas cinzas e avaliar o efeito da capacidade do reservatório com um exemplo de balanço hídrico.",
+      "tags": [
+        "Recursos hídricos",
+        "Edificações",
+        "Conservação de água"
+      ],
+      "hero": {
+        "eyebrow": "Água em edificações",
+        "headline": "A distribuição da chuva muda o volume que o reservatório consegue fornecer.",
+        "items": [
+          {
+            "value": "20 mm",
+            "label": "chuva em cada cenário"
+          },
+          {
+            "value": "600 L",
+            "label": "capacidade útil simulada"
+          },
+          {
+            "value": "250 L/dia",
+            "label": "demanda não potável simulada"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Câmara Brasileira da Indústria da Construção. Guia orientativo das normas de conservação de água, fontes alternativas não potáveis e aproveitamento de água de chuva em edificações",
+          "url": "https://cbic.org.br/wp-content/uploads/sites/22/2019/11/Guia_Orientativo_Normas_de_Conservacao_de_Agua.pdf",
+          "year": 2019
+        },
+        {
+          "title": "Santos, S., e Sant’Ana, D. Análise do potencial de redução do consumo de água potável pelo aproveitamento de águas pluviais e reúso de águas cinzas na Rodoviária do Plano Piloto de Brasília - DF",
+          "url": "https://periodicos.unb.br/index.php/paranoa/article/view/20565",
+          "year": 2019
+        },
+        {
+          "title": "Ghisi, E. e colaboradores. Uso racional de água e eficiência energética em habitações de interesse social, volume 2. Uso de fontes alternativas de água",
+          "url": "https://labeee.ufsc.br/pt-br/node/665",
+          "year": 2015
+        },
+        {
+          "title": "Brasil. Lei nº 14.546, de 4 de abril de 2023",
+          "url": "https://legis.senado.leg.br/norma/36946194/publicacao/36946499",
+          "year": 2023
+        },
+        {
+          "title": "Adasa. Resolução nº 5, de 9 de maio de 2022. Aproveitamento ou reúso de água não potável em edificações no Distrito Federal",
+          "url": "https://www.sinj.df.gov.br/sinj/Norma/9cb1d19837e9418d869811a1a62e629e/Resolu_o_5_09_05_2022.html",
+          "year": 2022
+        },
+        {
+          "title": "Anvisa. Resolução RDC nº 216, de 15 de setembro de 2004. Regulamento Técnico de Boas Práticas para Serviços de Alimentação",
+          "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html",
+          "year": 2004
+        }
+      ],
+      "wordCount": 1810,
+      "readingMinutes": 9,
+      "publishedAt": "2026-11-16T16:14:59.318Z",
+      "url": "https://guilhermemenezespereira.com/artigos/agua-em-edificacoes-conservacao-e-reuso/",
+      "coverPath": "/assets/articles/images/agua-em-edificacoes-conservacao-e-reuso.png",
+      "coverAlt": "Em seis dias, a cisterna fornece 600 litros com chuva concentrada no primeiro dia e 1.500 litros com chuva distribuída em quatro dias."
+    },
+    {
+      "editorialDate": "2026-11-15",
+      "title": "A caçamba saiu da reforma. Como comprovar o destino dos resíduos?",
+      "description": "O percurso de três cargas mostra como evitar demolições desnecessárias, separar materiais e documentar o destino de cada resíduo.",
+      "category": "Engenharia Civil · Gestão de resíduos",
+      "slug": "residuos-de-construcao-rastreabilidade-no-canteiro",
+      "seoTitle": "Resíduos de construção e rastreabilidade no canteiro | Guilherme Menezes",
+      "seoDescription": "Acompanhe três cargas de uma reforma hipotética para entender prevenção de resíduos, segregação, medição e comprovação do destino no canteiro.",
+      "tags": [
+        "Resíduos de construção",
+        "Rastreabilidade",
+        "Reformas"
+      ],
+      "hero": {
+        "eyebrow": "Gestão de resíduos",
+        "headline": "Uma reforma, três cargas e uma destinação por confirmar.",
+        "items": [
+          {
+            "value": "12 m²",
+            "label": "revestimento preservado no exemplo"
+          },
+          {
+            "value": "3 cargas",
+            "label": "expedidas na reforma simulada"
+          },
+          {
+            "value": "2 de 3",
+            "label": "com destinação comprovada"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Brasil. Lei nº 12.305/2010, Política Nacional de Resíduos Sólidos, art. 9º",
+          "url": "https://legis.senado.leg.br/norma/575947/publicacao/34618961",
+          "year": 2010
+        },
+        {
+          "title": "Conselho Nacional do Meio Ambiente. Resolução nº 307/2002, com as alterações das Resoluções nº 348/2004, 431/2011, 448/2012 e 469/2015",
+          "url": "https://conama.mma.gov.br/?id=305&option=com_sisconama&task=arquivo.download",
+          "year": 2015
+        },
+        {
+          "title": "Ministério do Meio Ambiente. Portaria nº 280, de 29 de junho de 2020",
+          "url": "https://anttlegis.antt.gov.br/action/ActionDatalegis.php?acao=detalharAto&cod_menu=7145&cod_modulo=420&desItem=&desItemFim=&nomeTitulo=codigos&numeroAto=00000280&orgao=MMA&seqAto=000&tipo=POR&valorAno=2020",
+          "year": 2020
+        },
+        {
+          "title": "Minas Gerais. Deliberação Normativa COPAM nº 232/2019, que institui o Sistema MTR-MG",
+          "url": "https://mtr.meioambiente.mg.gov.br/documentos/232.pdf",
+          "year": 2019
+        },
+        {
+          "title": "Prefeitura de Belo Horizonte. Unidades de Recebimento de Pequenos Volumes, atualização de 22 de maio de 2026",
+          "url": "https://prefeitura.pbh.gov.br/slu/informacoes/servicos/urpvs-enderecos",
+          "year": 2026
+        },
+        {
+          "title": "SINIR. Comunicado MTR DGR/MMA nº 002/2025, sobre atualização cadastral e atividades licenciadas",
+          "url": "https://sinir.gov.br/informacoes/comunicados/comunicado-mtr-dgr-mma-no-002-2025/",
+          "year": 2025
+        }
+      ],
+      "wordCount": 1539,
+      "readingMinutes": 8,
+      "publishedAt": "2026-11-16T16:14:59.318Z",
+      "url": "https://guilhermemenezespereira.com/artigos/residuos-de-construcao-rastreabilidade-no-canteiro/",
+      "coverPath": "/assets/articles/images/residuos-de-construcao-rastreabilidade-no-canteiro.png",
+      "coverAlt": "Três cargas de uma reforma hipotética. Cerâmica e argamassa têm destinação comprovada, assim como o metal. O certificado da carga de gesso está pendente."
     }
-  ]
+  ],
+  "updatedAt": "2026-11-16T16:14:59.318Z"
 }
