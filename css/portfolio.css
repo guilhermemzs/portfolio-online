@@ -170,6 +170,7 @@ footer small { display:block; color:var(--mute); font-size:12px; margin-top:8px;
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation:none!important; transition:none!important; } }
 /* Article attachments retain their original proportions and reading order. */
 .reader img { height: auto; object-fit: contain; }
+.reader .article-cover--document img { width: 100%; max-height: none; }
 .reader em { font-family: inherit; color: inherit; background: none; filter: none; letter-spacing: inherit; }
 .reader .article-gallery, .reader .document-grid, .reader .article-stats-grid {
   display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,190px),1fr)); gap: 22px; margin: 30px 0;
