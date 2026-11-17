@@ -175,6 +175,19 @@ footer small { display:block; color:var(--mute); font-size:12px; margin-top:8px;
   display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,190px),1fr)); gap: 22px; margin: 30px 0;
 }
 .reader .article-gallery figure,.reader .document-card { margin: 0; }
+.reader .article-gallery--project {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 28px 24px;
+  align-items: start;
+}
+.reader .article-gallery--project figure:first-child { grid-column: 1 / -1; }
+.reader .article-gallery--project figure:nth-child(2) { grid-row: span 2; }
+.reader .article-gallery--project img { width: 100%; max-height: none; }
+@media (max-width:560px) {
+  .reader .article-gallery--project { grid-template-columns: minmax(0,1fr); gap: 28px; }
+  .reader .article-gallery--project figure:first-child,
+  .reader .article-gallery--project figure:nth-child(2) { grid-column: auto; grid-row: auto; }
+}
 .reader .article-stat strong,.source-panel strong,.reader .article-stat span,.source-panel .certificate-mini span { display: block; }
 .reader .article-stat,.source-panel { padding: 18px 0; border-top: 1px solid var(--line); }
 .reader .article-stat strong { font-size: 27px; }
